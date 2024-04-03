@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="171.07219696044922" tests='3' skipped='0'
+name="Test_Campaign_Whit_Contacts_All" failures='3' errors='0'><testcase time="57.256099224090576" name="Select_Contacts_In_The_Campaign_Shortlinks" status="failed"
+         classname="Test_Campaing_Whit_All_Contacts" >
+            <failure message="Message: Timed out waiting for element //input[@placeholder='Sender Id'] (xpath) to be present" type="AssertionError">
+                    <![CDATA[ Failing step: when I enter a valid campaign ID and URL ... failed in 12.08s  Location:3
+                        {'step_type': 'when', 'name': 'I enter a valid campaign ID and URL', 'text': 'None', 'status': 'failed', 'duration': 12.082640647888184, 'error_msg': "Message: Timed out waiting for element //input[@placeholder='Sender Id'] (xpath) to be present", 'error_lines': ['  File "/usr/local/lib/python3.8/dist-packages/behave/model.py", line 1329, in run\n    match.run(runner.context)\n', '  File "/usr/local/lib/python3.8/dist-packages/behave/matchers.py", line 98, in run\n    self.func(context, *args, **kwargs)\n', '  File "steps/test_campaign_whit_contacts_all_step.py", line 44, in test_step_impl\n    context.custom_messages.sender_id("123456")\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/campaign_content_page.py", line 43, in sender_id\n    self.global_function.text("xpath", "//input[@placeholder=\'Sender Id\']", sender_id)\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/global_functions.py", line 66, in text\n    raise TimeoutException(f"Timed out waiting for element {selector_name} ({selector_type}) to be present") from ex\n'], 'hash': 65473689, 'index': 3}
+                    ]]>
+                </failure><system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Campaing_Whit_All_Contacts_1   @Test_Campaing_Whit_All_Contacts
+                scenario: Select contacts in the campaign Shortlinks
+e                given I am on the content page &#34;Shortlink&#34; in &#34;SMS&#34; ... passed in 33.41s 
+                when I select the &#34;PRUEBAS CONTACTOS&#34; contacts file ... passed in 8.399s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.366s 
+                when I enter a valid campaign ID and URL ... failed in 12.08s 
+                when I create a valid message ... skipped in 0.0s 
+                when I click on the &#34;next&#34; button to continue ... skipped in 0.0s 
+                when I click the &#34;done&#34; button to finish the campaign creation process ... skipped in 0.0s 
+                when I click the confirm campaign ... skipped in 0.0s 
+                when I am see the confirmation alert, &#34;TRANSACTION SUCCESSFUL&#34; in &#34;//div[@class=&#39;ant-notification-notice-message&#39;]&#34; ... skipped in 0.0s 
+                then I am redirected to the campaigns menu and see the confirmation alert ... skipped in 0.0s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="56.672638177871704" name="Select_Contacts_In_The_Campaign_Bulk" status="failed"
+         classname="Test_Campaing_Whit_All_Contacts" >
+            <failure message="Message: Timed out waiting for element //input[@placeholder='Sender Id'] (xpath) to be present" type="AssertionError">
+                    <![CDATA[ Failing step: when I enter a campaign ID ... failed in 12.08s  Location:3
+                        {'step_type': 'when', 'name': 'I enter a campaign ID', 'text': 'None', 'status': 'failed', 'duration': 12.079423904418945, 'error_msg': "Message: Timed out waiting for element //input[@placeholder='Sender Id'] (xpath) to be present", 'error_lines': ['  File "/usr/local/lib/python3.8/dist-packages/behave/model.py", line 1329, in run\n    match.run(runner.context)\n', '  File "/usr/local/lib/python3.8/dist-packages/behave/matchers.py", line 98, in run\n    self.func(context, *args, **kwargs)\n', '  File "steps/test_campaign_whit_contacts_all_step.py", line 59, in test_step_impl\n    context.custom_messages.sender_id("123456")\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/campaign_content_page.py", line 43, in sender_id\n    self.global_function.text("xpath", "//input[@placeholder=\'Sender Id\']", sender_id)\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/global_functions.py", line 66, in text\n    raise TimeoutException(f"Timed out waiting for element {selector_name} ({selector_type}) to be present") from ex\n'], 'hash': 2842320, 'index': 3}
+                    ]]>
+                </failure><system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Campaing_Whit_All_Contacts_2   @Test_Campaing_Whit_All_Contacts
+                scenario: Select contacts in the campaign Bulk
+e                given I am on the content page &#34;Bulk SMS&#34; in &#34;SMS&#34; ... passed in 32.9s 
+                when I select the &#34;PRUEBAS CONTACTOS&#34; contacts file ... passed in 8.368s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.324s 
+                when I enter a campaign ID ... failed in 12.08s 
+                when I create a valid message ... skipped in 0.0s 
+                when I click on the &#34;next&#34; button to continue ... skipped in 0.0s 
+                when I click the &#34;done&#34; button to finish the campaign creation process ... skipped in 0.0s 
+                when I click the confirm campaign ... skipped in 0.0s 
+                when I am see the confirmation alert, &#34;TRANSACTION SUCCESSFUL&#34; in &#34;//div[@class=&#39;ant-notification-notice-message&#39;]&#34; ... skipped in 0.0s 
+                then I am redirected to the campaigns menu and see the confirmation alert ... skipped in 0.0s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="57.14345955848694" name="Select_Contacts_In_The_Campaign_Voice" status="failed"
+         classname="Test_Campaing_Whit_All_Contacts" >
+            <failure message="Message: Timed out waiting for element //input[@placeholder='Sender Id'] (xpath) to be present" type="AssertionError">
+                    <![CDATA[ Failing step: when I enter a campaign ID ... failed in 12.07s  Location:3
+                        {'step_type': 'when', 'name': 'I enter a campaign ID', 'text': 'None', 'status': 'failed', 'duration': 12.074152946472168, 'error_msg': "Message: Timed out waiting for element //input[@placeholder='Sender Id'] (xpath) to be present", 'error_lines': ['  File "/usr/local/lib/python3.8/dist-packages/behave/model.py", line 1329, in run\n    match.run(runner.context)\n', '  File "/usr/local/lib/python3.8/dist-packages/behave/matchers.py", line 98, in run\n    self.func(context, *args, **kwargs)\n', '  File "steps/test_campaign_whit_contacts_all_step.py", line 59, in test_step_impl\n    context.custom_messages.sender_id("123456")\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/campaign_content_page.py", line 43, in sender_id\n    self.global_function.text("xpath", "//input[@placeholder=\'Sender Id\']", sender_id)\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/global_functions.py", line 66, in text\n    raise TimeoutException(f"Timed out waiting for element {selector_name} ({selector_type}) to be present") from ex\n'], 'hash': 2842320, 'index': 3}
+                    ]]>
+                </failure><system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Campaing_Whit_All_Contacts_3   @Test_Campaing_Whit_All_Contacts
+                scenario: Select contacts in the campaign Voice
+e                given I am on the content page &#34;Bulk Voice&#34; in &#34;Voice&#34; ... passed in 33.38s 
+                when I select the &#34;PRUEBAS CONTACTOS&#34; contacts file ... passed in 8.372s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.316s 
+                when I enter a campaign ID ... failed in 12.07s 
+                when I create a valid message ... skipped in 0.0s 
+                when I select the &#34;Female / English&#34; voice for the campaign ... skipped in 0.0s 
+                when I click on the &#34;next&#34; button to continue ... skipped in 0.0s 
+                when I click the &#34;done&#34; button to finish the campaign creation process ... skipped in 0.0s 
+                when I click the confirm campaign ... skipped in 0.0s 
+                when I am see the confirmation alert, &#34;TRANSACTION SUCCESSFUL&#34; in &#34;//div[@class=&#39;ant-notification-notice-message&#39;]&#34; ... skipped in 0.0s 
+                then I am redirected to the campaigns menu and see the confirmation alert ... skipped in 0.0s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

@@ -1,0 +1,15 @@
+@Test_Create_Campaign_Send_Schedule_Options_SMS_Shortlinks
+Feature: Test_Create_Campaign_Send_Schedule_Options_SMS_Shortlinks # features/test_create_campaign_options_send_schedule_SMS_Shortlinks.feature:2
+
+  Background:   # features/test_create_campaign_options_send_schedule_SMS_Shortlinks.feature:4
+
+  @Test_Create_Campaign_Send_Schedule_Options_SMS_Shortlinks_6 @Test_Create_Campaign_Send_Schedule_Options_SMS_Shortlinks
+  Scenario: Create campaign with schedule option (error date )                                                                                # features/test_create_campaign_options_send_schedule_SMS_Shortlinks.feature:49
+    Given I am on the campaign settings page "Shortlink" in "SMS"                                                                             # steps/test_create_campaign_options_send_schedule_all_step.py:11
+    Given I select a company, and a name for the test "PRUEBAS AUTOMATIZADAS"                                                                 # steps/test_create_campaign_options_send_schedule_all_step.py:24
+    When I select Send now/schedule option "2"                                                                                                # steps/test_create_campaign_options_send_schedule_all_step.py:39
+    When I enter a percentage "100" in the phase                                                                                              # steps/test_create_campaign_options_send_schedule_all_step.py:51
+    When I enter the today date in the phase                                                                                                  # steps/test_create_campaign_options_send_schedule_all_step.py:56
+    When I click on the "next" button to continue                                                                                             # steps/test_common_step.py:11
+    Then I see the error message "All the phases should have a configured date" in "(//div[@class='ant-notification-notice-description'])[1]" # steps/test_common_step.py:17
+

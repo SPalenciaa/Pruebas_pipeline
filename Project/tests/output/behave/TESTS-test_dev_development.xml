@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="71.77305722236633" tests='3' skipped='0'
+name="Test_Dev_Development" failures='0' errors='0'><testcase time="22.478119373321533" name="Api_Test_--_@1.1_" status="passed"
+         classname="Test_Dev_Api"><system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Dev_Api_1   @Smoke_Test   @Test_Dev_Development
+                scenario: Api test -- @1.1 
+                given I am on the login page of the dev ... passed in 12.87s 
+                when I select SMS from the Developers menu ... passed in 4.433s 
+                then I am redirected to SMS API Key page ... passed in 3.141s 
+                when I see the apis ... passed in 2.029s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="23.1151065826416" name="Api_Test_--_@1.2_" status="passed"
+         classname="Test_Dev_Api"><system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Dev_Api_1   @Smoke_Test   @Test_Dev_Development
+                scenario: Api test -- @1.2 
+                given I am on the login page of the dev ... passed in 13.48s 
+                when I select Voice from the Developers menu ... passed in 4.432s 
+                then I am redirected to SMS API Key page ... passed in 3.186s 
+                when I see the apis ... passed in 2.017s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="26.1798312664032" name="Api_Test" status="passed"
+         classname="Test_Dev_Api"><system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Dev_documentation_1   @Smoke_Test   @Test_Dev_Development
+                scenario: Api test
+                given I am on the login page of the dev ... passed in 12.99s 
+                when I select "Documentation" from the Developers menu ... passed in 4.461s 
+                then I am redirected to Documentation page ... passed in 2.069s 
+                when I see the Documentation Api ... passed in 6.657s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

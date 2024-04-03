@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="136.88849568367004" tests='3' skipped='0'
+name="Test_Upload_Csv_Voice_Bulk" failures='0' errors='0'><testcase time="41.3034245967865" name="Upload_Csv_File_Invalid_(Error)" status="passed"
+         classname="Test_Upload_Csv_Voice_Bulk" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Upload_Csv_Voice_1   @Test_Upload_Csv_Voice_Bulk
+                scenario: Upload CSV file invalid (error)
+                given I am on the content creation page &#34;Bulk Voice&#34; in &#34;Voice&#34; ... passed in 33.93s 
+e                when I am not upload csv file ... passed in 2.01s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.293s 
+                then I see the error message &#34;You need to load a .CSV or Excel File&#34; in &#34;(//div[@class=&#39;ant-notification-notice-description&#39;])[1]&#34; ... passed in 2.067s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="45.40997338294983" name="Unselect_Mobilenumber_(Error)" status="passed"
+         classname="Test_Upload_Csv_Voice_Bulk" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Upload_Csv_Voice_2   @Test_Upload_Csv_Voice_Bulk
+                scenario: Unselect MobileNumber (error)
+                given I am on the content creation page &#34;Bulk Voice&#34; in &#34;Voice&#34; ... passed in 34.6s 
+e                when I upload a valid CSV file with phone numbers ... passed in 4.145s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.31s 
+                then I see the error message &#34;You need to select which column in the file contains the phone number&#34; in &#34;(//div[@class=&#39;ant-notification-notice-description&#39;])[1]&#34; ... passed in 2.065s 
+                then I click on the &#34;remove file&#34; button ... passed in 1.291s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="50.175097703933716" name="Upload_Csv_File" status="passed"
+         classname="Test_Upload_Csv_Voice_Bulk" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Upload_Csv_Voice_3   @Test_Upload_Csv_Voice_Bulk
+                scenario: Upload CSV file
+                given I am on the content creation page &#34;Bulk Voice&#34; in &#34;Voice&#34; ... passed in 32.03s 
+e                when I upload a valid CSV file with phone numbers ... passed in 4.165s 
+                when I select the &#34;MobileNumber&#34; column from the CSV file ... passed in 2.616s 
+                when I select the wildcards to use ... passed in 5.905s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.427s 
+                then I am redirected to the message content page ... passed in 2.034s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

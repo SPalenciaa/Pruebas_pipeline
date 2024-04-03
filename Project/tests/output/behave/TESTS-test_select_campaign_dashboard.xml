@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="126.45570850372314" tests='6' skipped='0'
+name="Test_Select_Campaign_Dashboard" failures='0' errors='0'><testcase time="20.532784700393677" name="Select_Create_Campaign_--_@1.1_" status="passed"
+         classname="Test_Select_Create_Campaign_Dashboard_Company_Admin" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @test_campaign_dashboard
+                scenario: Select create campaign -- @1.1 
+e                given I am in the dashboard page ... passed in 14.16s 
+                when I click New SMS Campaign button in dashboard ... passed in 3.113s 
+                then I am redirected to the firs step to create a SMS campaign ... passed in 3.258s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="20.211021184921265" name="Select_Create_Campaign_--_@1.2_" status="passed"
+         classname="Test_Select_Create_Campaign_Dashboard_Company_Admin" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @test_campaign_dashboard
+                scenario: Select create campaign -- @1.2 
+e                given I am in the dashboard page ... passed in 13.85s 
+                when I click New VOICE Campaign button in dashboard ... passed in 3.145s 
+                then I am redirected to the firs step to create a SMS campaign ... passed in 3.218s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="20.196056604385376" name="Select_Asign_Balance" status="passed"
+         classname="Test_Select_Create_Campaign_Dashboard_Company_Admin" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @test_campaign_dashboard
+                scenario: Select Asign balance
+e                given I am in the dashboard page ... passed in 13.74s 
+                when I click &#34;Assign Balance&#34; button in dashboard ... passed in 3.118s 
+                then I see the page of assign Balance ... passed in 3.335s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="19.42798900604248" name="Filter_Channel_Select_Dashboard" status="passed"
+         classname="Test_Select_Create_Campaign_Dashboard_Company_Admin" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @test_campaign_dashboard
+                scenario: Filter channel select dashboard
+e                given I am in the dashboard page ... passed in 14.06s 
+                when I filter the channel for &#34;All&#34; in the dashboard ... passed in 2.026s 
+                then I see the voice and SMS consumption at the same time ... passed in 3.339s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="22.86609125137329" name="Filter_Channel_Select_Dashboard" status="passed"
+         classname="Test_Select_Create_Campaign_Dashboard_Company_Admin" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @test_campaign_dashboard
+                scenario: Filter channel select dashboard
+e                given I am in the dashboard page ... passed in 13.39s 
+                when I filter the channel for &#34;Voice&#34; in the dashboard ... passed in 2.022s 
+                then I see only the voice consumption ... passed in 7.457s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="23.221765756607056" name="Filter_Channel_Select_Dashboard" status="passed"
+         classname="Test_Select_Create_Campaign_Dashboard_Company_Admin" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @test_campaign_dashboard
+                scenario: Filter channel select dashboard
+e                given I am in the dashboard page ... passed in 13.7s 
+                when I filter the channel for &#34;Sms&#34; in the dashboard ... passed in 2.029s 
+                then I filter only the consumption of sms ... passed in 7.49s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

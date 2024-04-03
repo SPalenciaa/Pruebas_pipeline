@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="90.68530106544495" tests='4' skipped='0'
+name="Test_Select_Campaing_Menu_All" failures='0' errors='0'><testcase time="22.659651041030884" name="Select_Shortlinks_From_Campaings_Menu" status="passed"
+         classname="Test_Select_Campaing_Menu_All" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Select_Campaing_Menu_All_1   @smoketest   @Test_Select_Campaing_Menu_All
+                scenario: Select Shortlinks from Campaings menu
+                given I am on the menu page ... passed in 13.57s 
+e                when I select &#34;Shortlink&#34; from the campaigns menu &#34;SMS&#34; ... passed in 5.883s 
+                then I am redirected to the campaign settings page ... passed in 3.203s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="22.86032247543335" name="Select_Build_Campaign_From_Campaings_Menu" status="passed"
+         classname="Test_Select_Campaing_Menu_All" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Select_Campaing_Menu_All_2   @smoketest   @Test_Select_Campaing_Menu_All
+                scenario: Select Build campaign from Campaings menu
+                given I am on the menu page ... passed in 13.83s 
+e                when I select &#34;Bulk SMS&#34; from the campaigns menu &#34;SMS&#34; ... passed in 5.817s 
+                then I am redirected to the campaign settings page ... passed in 3.208s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="22.776730060577393" name="Select_Build_Campaign_From_Campaings_Menu" status="passed"
+         classname="Test_Select_Campaing_Menu_All" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Select_Campaing_Menu_All_3   @smoketest   @Test_Select_Campaing_Menu_All
+                scenario: Select Build campaign from Campaings menu
+                given I am on the menu page ... passed in 13.77s 
+e                when I select &#34;Bulk Voice&#34; from the campaigns menu &#34;Voice&#34; ... passed in 5.772s 
+                then I am redirected to the campaign settings page ... passed in 3.233s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="22.38859748840332" name="Select_Build_Campaign_From_Campaings_Menu" status="passed"
+         classname="Test_Select_Campaing_Menu_All" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Select_Campaing_Menu_All_4   @smoketest   @Test_Select_Campaing_Menu_All
+                scenario: Select Build campaign from Campaings menu
+                given I am on the menu page ... passed in 13.43s 
+e                when I select &#34;Shortlinks Metrics&#34; from the campaigns menu &#34;SMS&#34; ... passed in 5.751s 
+                then I am redirected to the Shortlinks page init ... passed in 3.208s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

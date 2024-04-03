@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="22.989720582962036" tests='1' skipped='0'
+name="Test_Company_Balance_Filters" failures='1' errors='0'><testcase time="22.989720582962036" name="Filter_Campaign" status="failed"
+         classname="Test_Company_Balance_Filters" >
+            <failure message="card_account() missing 1 required positional argument: 'context'" type="AssertionError">
+                    <![CDATA[ Failing step: then I will see the card of the "Angie Mendoza" account ... failed in 0.0002594s  Location:1
+                        {'step_type': 'then', 'name': 'I will see the card of the "Angie Mendoza" account', 'text': 'None', 'status': 'failed', 'duration': 0.0002593994140625, 'error_msg': "card_account() missing 1 required positional argument: 'context'", 'error_lines': ['  File "/usr/local/lib/python3.8/dist-packages/behave/model.py", line 1329, in run\n    match.run(runner.context)\n', '  File "/usr/local/lib/python3.8/dist-packages/behave/matchers.py", line 98, in run\n    self.func(context, *args, **kwargs)\n', '  File "steps/test_company_balance_step.py", line 31, in test_step_impl\n    context.company_filter.card_account(card.strip(\'"\'))\n'], 'hash': 40947893, 'index': 1}
+                    ]]>
+                </failure><system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Company_Balance_Filters_1   @Test_Company_Balance_Filters
+                scenario: Filter campaign
+                given I am on the Balance company page ... passed in 18.64s 
+e                when Filter the &#34;Angie Mendoza&#34; account ... passed in 4.345s 
+                then I will see the card of the &#34;Angie Mendoza&#34; account ... failed in 0.0002594s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

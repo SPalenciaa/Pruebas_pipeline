@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="176.1313328742981" tests='4' skipped='0'
+name="Test_Upload_Csv_Sms_Bulk" failures='2' errors='0'><testcase time="38.88700032234192" name="Upload_Csv_File_Invalid_(Error)" status="passed"
+         classname="Test_Upload_Csv_Sms_Bulk" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Upload_Csv_SMS_Bulk_1   @Test_Upload_Csv_SMS_Bulk
+                scenario: Upload CSV file invalid (error)
+                given I am on the content creation page &#34;Bulk SMS&#34; in &#34;SMS&#34; ... passed in 31.51s 
+e                when I am not upload csv file ... passed in 2.013s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.28s 
+                then I see the error message &#34;You need to load a .csv or Excel File&#34; in &#34;(//div[@class=&#39;ant-notification-notice-description&#39;])[1]&#34; ... passed in 2.084s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="52.241554737091064" name="Upload_Csv_File" status="passed"
+         classname="Test_Upload_Csv_Sms_Bulk" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Upload_Csv_SMS_Bulk_3   @Test_Upload_Csv_SMS_Bulk
+                scenario: Upload CSV file
+                given I am on the content creation page &#34;Bulk SMS&#34; in &#34;SMS&#34; ... passed in 33.97s 
+e                when I upload a valid CSV file with phone numbers ... passed in 4.157s 
+                when I select the &#34;MobileNumber&#34; column from the CSV file ... passed in 2.694s 
+                when I select the wildcards to use ... passed in 6.014s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.373s 
+                then I am redirected to the message content page ... passed in 2.031s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="41.945993423461914" name="Dowload_Csv" status="failed"
+         classname="Test_Upload_Csv_Sms_Bulk" >
+            <failure message="El archivo yp-bulk-campaign-template (14) fallo" type="AssertionError">
+                    <![CDATA[ Failing step: when I see an example of a file required for the platform has been downloaded ... failed in 0.0005915s  Location:1
+                        {'step_type': 'when', 'name': 'I see an example of a file required for the platform has been downloaded', 'text': 'None', 'status': 'failed', 'duration': 0.0005915164947509766, 'error_msg': 'El archivo yp-bulk-campaign-template (14) fallo', 'error_lines': ['  File "/usr/local/lib/python3.8/dist-packages/behave/model.py", line 1329, in run\n    match.run(runner.context)\n', '  File "/usr/local/lib/python3.8/dist-packages/behave/matchers.py", line 98, in run\n    self.func(context, *args, **kwargs)\n', '  File "steps/test_upload_csv_step.py", line 55, in test_step_impl\n    context.upload_csv.validate_download("yp-bulk-campaign-template (14)")\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/campaign_destination_page.py", line 78, in validate_download\n    raise e\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/campaign_destination_page.py", line 75, in validate_download\n    raise Exception(f"El archivo {file_name} fallo")\n'], 'hash': 61526583, 'index': 1}
+                    ]]>
+                </failure><system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Upload_Csv_SMS_Bulk_4   @Test_Upload_Csv_SMS_Bulk
+                scenario: Dowload CSV
+                given I am on the content creation page &#34;Bulk SMS&#34; in &#34;SMS&#34; ... passed in 33.63s 
+e                when I click to download CSV template ... passed in 8.316s 
+                when I see an example of a file required for the platform has been downloaded ... failed in 0.0005915s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="43.0567843914032" name="Unselect_Mobilenumber_(Error)" status="failed"
+         classname="Test_Upload_Csv_Sms_Bulk" >
+            <failure message="'global_functions' object has no attribute 'evidence_path'" type="AssertionError">
+                    <![CDATA[ Failing step: then I see the error message "You need to select which column in the file contains the phone number" in "(//div[@class='ant-notification-notice-description'])[1]" ... failed in 2.116s  Location:2
+                        {'step_type': 'then', 'name': 'I see the error message "You need to select which column in the file contains the phone number" in "(//div[@class=\'ant-notification-notice-description\'])[1]"', 'text': 'None', 'status': 'failed', 'duration': 2.11618971824646, 'error_msg': "'global_functions' object has no attribute 'evidence_path'", 'error_lines': ['  File "/usr/local/lib/python3.8/dist-packages/behave/model.py", line 1329, in run\n    match.run(runner.context)\n', '  File "/usr/local/lib/python3.8/dist-packages/behave/matchers.py", line 98, in run\n    self.func(context, *args, **kwargs)\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/steps/test_common_step.py", line 20, in test_step_impl\n    context.common_instance.error_message_matches(expected_message, xpath)\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/common_page.py", line 37, in error_message_matches\n    self.global_function.attach_screenshot_to_report()\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/global_functions.py", line 184, in attach_screenshot_to_report\n    screenshot_path = os.path.join(self.evidence_path, f"{name}.png")\n'], 'hash': 85040021, 'index': 2}
+                    ]]>
+                </failure><system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Upload_Csv_SMS_Bulk_2   @Test_Upload_Csv_SMS_Bulk
+                scenario: Unselect MobileNumber (error)
+                given I am on the content creation page &#34;Bulk SMS&#34; in &#34;SMS&#34; ... passed in 33.47s 
+e                when I upload a valid CSV file with phone numbers ... passed in 4.164s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.311s 
+                then I see the error message &#34;You need to select which column in the file contains the phone number&#34; in &#34;(//div[@class=&#39;ant-notification-notice-description&#39;])[1]&#34; ... failed in 2.116s 
+                then I click on the &#34;remove file&#34; button ... skipped in 0.0s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

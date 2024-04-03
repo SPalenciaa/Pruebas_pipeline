@@ -1,0 +1,18 @@
+Country,Network,MccMnc,Prefix,Rate
+Colombia,All networks,732,57,12
+Colombia,Avantel,732130,57,12
+Colombia,Comcel,732101,57,12
+Colombia,Compatel Colombia SAS,732004,57,12
+Colombia,HABLAME COLOMBIA LDI SAS ESP,732210,57,12
+Colombia,LOGISTICA FLASH COLOMBIA S.A.S,732240,57,12
+Colombia,Libre Tecnologias S.A.S.,732220,57,12
+Colombia,Lleida Networks,732003,57,12
+Colombia,Movistar,732102,57,12
+Colombia,SETROC MOBILE GROUP,732230,57,12
+Colombia,Suma Movil SAS,732199,57,12
+Colombia,Telefonica Colombia (Movistar),732123,57,12
+Colombia,Tigo,732111,57,12
+Colombia,Tigo,732165,57,12
+Colombia,Tigo,732103,57,12
+Colombia,Une EMP Telecomunicaciones,732020,57,12
+Colombia,Virgin,732154,57,12

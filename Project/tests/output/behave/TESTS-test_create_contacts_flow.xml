@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="70.37064027786255" tests='1' skipped='0'
+name="Test_Create_Contacts_Flow" failures='1' errors='0'><testcase time="70.37064027786255" name="Verify_Creation_Campaing" status="failed"
+         classname="Test_Create_Contacts_Flow" >
+            <failure message="'global_functions' object has no attribute 'evidence_path'" type="AssertionError">
+                    <![CDATA[ Failing step: then I am redirected to the list_gropus page ... failed in 17.1s  Location:4
+                        {'step_type': 'then', 'name': 'I am redirected to the list_gropus page', 'text': 'None', 'status': 'failed', 'duration': 17.101462602615356, 'error_msg': "'global_functions' object has no attribute 'evidence_path'", 'error_lines': ['  File "/usr/local/lib/python3.8/dist-packages/behave/model.py", line 1329, in run\n    match.run(runner.context)\n', '  File "/usr/local/lib/python3.8/dist-packages/behave/matchers.py", line 98, in run\n    self.func(context, *args, **kwargs)\n', '  File "steps/test_create_contacts_flow.py", line 39, in test_step_impl\n    context.confirmation_page_contacts.verify_list_gropus_page()\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/contacts_confirmation_page.py", line 26, in verify_list_gropus_page\n    self.global_function.attach_screenshot_to_report(name="redirected_campaigns_menu_error")\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/global_functions.py", line 184, in attach_screenshot_to_report\n    screenshot_path = os.path.join(self.evidence_path, f"{name}.png")\n'], 'hash': 20487354, 'index': 4}
+                    ]]>
+                </failure><system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Create_Contacts_Flow_1   @Test_Create_Contacts_Flow
+                scenario: Verify creation campaing
+e                when I am on the confirmation contacts page ... passed in 44.99s 
+                when I click the &#34;done&#34; button to finish the campaign creation process ... passed in 3.289s 
+                when I click the confirm campaign ... passed in 1.323s 
+                when I am see the confirmation alert, &#34;TRANSACTION SUCCESSFUL&#34; in &#34;//div[@class=&#39;ant-notification-notice-message&#39;]&#34; ... passed in 3.666s 
+                then I am redirected to the list_gropus page ... failed in 17.1s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

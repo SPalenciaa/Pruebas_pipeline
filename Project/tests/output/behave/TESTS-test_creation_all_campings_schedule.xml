@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="266.87300086021423" tests='3' skipped='0'
+name="Test_Creation_All_Campings_Schedule" failures='1' errors='0'><testcase time="90.16541576385498" name="Review_Campaign_Data_--_@1.1_" status="passed"
+         classname="Test_Creation_Campaing_Flow" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Creation_Campaing_1   @Smoke_Test   @Test_Creation_Campaing_Flows_schedule
+                scenario: Review Campaign Data -- @1.1 
+e                given I am on the &#34;Shortlink&#34; campaign summary page test in &#34;SMS&#34; ... passed in 77.6s 
+                when I review the &#34;PRUEBAS AUTOMATIZADAS&#34; and data ... passed in 4.211s 
+                when I click the &#34;done&#34; button to finish the campaign creation process ... passed in 3.303s 
+                when I click the confirm campaign ... passed in 1.36s 
+                when I am see the confirmation alert, &#34;TRANSACTION SUCCESSFUL&#34; in &#34;//div[@class=&#39;ant-notification-notice-message&#39;]&#34; ... passed in 3.683s 
+                then I am redirected to the campaigns menu and see the confirmation alert ... passed in 0.009994s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="90.07649278640747" name="Review_Campaign_Data_--_@1.2_" status="passed"
+         classname="Test_Creation_Campaing_Flow" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Creation_Campaing_1   @Smoke_Test   @Test_Creation_Campaing_Flows_schedule
+                scenario: Review Campaign Data -- @1.2 
+e                given I am on the &#34;Bulk SMS&#34; campaign summary page test in &#34;SMS&#34; ... passed in 76.88s 
+                when I review the &#34;PRUEBAS AUTOMATIZADAS&#34; and data ... passed in 4.269s 
+                when I click the &#34;done&#34; button to finish the campaign creation process ... passed in 3.346s 
+                when I click the confirm campaign ... passed in 1.35s 
+                when I am see the confirmation alert, &#34;TRANSACTION SUCCESSFUL&#34; in &#34;//div[@class=&#39;ant-notification-notice-message&#39;]&#34; ... passed in 4.228s 
+                then I am redirected to the campaigns menu and see the confirmation alert ... passed in 0.00765s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="86.63109230995178" name="Review_Campaign_Data_--_@1.3_" status="failed"
+         classname="Test_Creation_Campaing_Flow" >
+            <failure message="Message: &#10;                                Stacktrace:&#10;                                RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8&#10;                                WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:182:5&#10;                                NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:394:5&#10;                                element.find/&lt;/&lt;@chrome://remote/content/marionette/element.sys.mjs:134:16" type="AssertionError">
+                    <![CDATA[ Failing step: when I review the "PRUEBAS AUTOMATIZADAS" and data ... failed in 7.583s  Location:1
+                        {'step_type': 'when', 'name': 'I review the "PRUEBAS AUTOMATIZADAS" and data', 'text': 'None', 'status': 'failed', 'duration': 7.582502603530884, 'error_msg': 'Message: \n                Stacktrace:\n                RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8\n                WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:182:5\n                NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:394:5\n                element.find/</<@chrome://remote/content/marionette/element.sys.mjs:134:16', 'error_lines': ['  File "/usr/local/lib/python3.8/dist-packages/behave/model.py", line 1329, in run\n    match.run(runner.context)\n', '  File "/usr/local/lib/python3.8/dist-packages/behave/matchers.py", line 98, in run\n    self.func(context, *args, **kwargs)\n', '  File "steps/test_creation_all_campaings_schedule_step.py", line 49, in test_step_impl\n    context.Reviewdata.data(campaign_name.strip(\'"\'))\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/campaign_summary_page.py", line 31, in data\n    data_campaign = self.global_function.select_element_xpath("(//p[normalize-space()=\'PRUEBAS AUTOMATIZADAS\'])[1]").text\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/global_functions.py", line 30, in select_element_xpath\n    element_xpath = WebDriverWait(self.driver, timeout).until(EC.presence_of_element_located((By.XPATH, element)))\n', '  File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/support/wait.py", line 95, in until\n    raise TimeoutException(message, screen, stacktrace)\n'], 'hash': 63545006, 'index': 1}
+                    ]]>
+                </failure><system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Creation_Campaing_1   @Smoke_Test   @Test_Creation_Campaing_Flows_schedule
+                scenario: Review Campaign Data -- @1.3 
+e                given I am on the &#34;Bulk Voice&#34; campaign summary page test in &#34;Voice&#34; ... passed in 79.05s 
+                when I review the &#34;PRUEBAS AUTOMATIZADAS&#34; and data ... failed in 7.583s 
+                when I click the &#34;done&#34; button to finish the campaign creation process ... skipped in 0.0s 
+                when I click the confirm campaign ... skipped in 0.0s 
+                when I am see the confirmation alert, &#34;TRANSACTION SUCCESSFUL&#34; in &#34;//div[@class=&#39;ant-notification-notice-message&#39;]&#34; ... skipped in 0.0s 
+                then I am redirected to the campaigns menu and see the confirmation alert ... skipped in 0.0s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

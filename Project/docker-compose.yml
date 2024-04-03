@@ -1,0 +1,56 @@
+version: "3"
+services:
+#  chrome-node1:
+#    image: selenium/node-chrome:4.9.1-20230508
+#    shm_size: 2gb
+#    depends_on:
+#      - selenium-hub
+#    environment:
+#      - SE_EVENT_BUS_HOST=selenium-hub
+#      - SE_EVENT_BUS_PUBLISH_PORT=4442
+#      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+#      - VNC_NO_PASSWORD=1
+#      - SE_NODE_MAX_SESSIONS=10
+#    volumes:
+#      - "./tests/data/csv:/csv"
+
+
+#  edge-node1:
+#    image: selenium/node-edge:4.9.1-20230508
+#    shm_size: 2gb
+#    depends_on:
+#      - selenium-hub
+#    environment:
+#      - SE_EVENT_BUS_HOST=selenium-hub
+#      - SE_EVENT_BUS_PUBLISH_PORT=4442
+#      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+#      - VNC_NO_PASSWORD=1
+#      - SE_NODE_MAX_SESSIONS=10
+#    volumes:
+#     - "./tests/data/csv:/Csv_pruebas_good"
+#      - "./tests/data/csv:/Csv_pruebas_automatizadas_contactos"
+
+
+  firefox-node1:
+    image: selenium/node-firefox:4.9.1-20230508
+    shm_size: 2gb
+    depends_on:
+      - selenium-hub
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+      - VNC_NO_PASSWORD=1
+      - SE_NODE_MAX_SESSIONS=9
+    volumes:
+      - ./tests/data/Csv:/csv
+
+
+  selenium-hub:
+    image: selenium/hub:4.9.1-20230508
+    container_name: selenium-hub
+    ports:
+      - "4442:4442"
+      - "4443:4443"
+      - "4444:4444"
+

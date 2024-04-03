@@ -1,0 +1,48 @@
+@Test_List_Groups
+Feature: Test_List_Groups # features/test_list_groups.feature:2
+
+  Background:   # features/test_list_groups.feature:4
+
+  @Test_List_Groups_1 @Test_List_Groups
+  Scenario: Filter List/groups                                                   # features/test_list_groups.feature:9
+    Given I am on the "Groups" page                                              # steps/test_list_gruops_steps.py:8
+    When I filter the contacts "Pruebas Demo"                                    # steps/test_list_gruops_steps.py:19
+    When I see the group of contacts with the name "Pruebas Demo" and their data # steps/test_list_gruops_steps.py:24
+      Traceback (most recent call last):
+        File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/global_functions.py", line 176, in element_present
+          element = WebDriverWait(self.driver, timeout).until(EC.presence_of_element_located((locator, selector)))
+        File "/usr/local/lib/python3.8/dist-packages/selenium/webdriver/support/wait.py", line 95, in until
+          raise TimeoutException(message, screen, stacktrace)
+      selenium.common.exceptions.TimeoutException: Message: 
+      Stacktrace:
+      RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+      WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:182:5
+      NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:394:5
+      element.find/</<@chrome://remote/content/marionette/element.sys.mjs:134:16
+      
+      
+      During handling of the above exception, another exception occurred:
+      
+      Traceback (most recent call last):
+        File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/contacts_list_groups_page.py", line 39, in verify_filter_search
+          self.global_function.element_present("xpath", f"(//td[contains(text(),'{card}')])[1]")#####
+        File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/global_functions.py", line 181, in element_present
+          raise AssertionError
+      AssertionError
+      
+      During handling of the above exception, another exception occurred:
+      
+      Traceback (most recent call last):
+        File "/usr/local/lib/python3.8/dist-packages/behave/model.py", line 1329, in run
+          match.run(runner.context)
+        File "/usr/local/lib/python3.8/dist-packages/behave/matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+        File "steps/test_list_gruops_steps.py", line 26, in test_step_impl
+          context.list_page.verify_filter_search(card.strip('"'))
+        File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/contacts_list_groups_page.py", line 41, in verify_filter_search
+          self.global_function.attach_screenshot_to_report("accounts_filter_error")
+        File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/global_functions.py", line 184, in attach_screenshot_to_report
+          screenshot_path = os.path.join(self.evidence_path, f"{name}.png")
+      AttributeError: 'global_functions' object has no attribute 'evidence_path'
+
+

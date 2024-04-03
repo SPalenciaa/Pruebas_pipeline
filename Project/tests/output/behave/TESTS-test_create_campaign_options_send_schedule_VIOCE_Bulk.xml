@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="239.6240258216858" tests='7' skipped='0'
+name="Test_Create_Campaign_Options_Send_Schedule_Vioce_Bulk" failures='0' errors='0'><testcase time="29.27855634689331" name="Create_Campaign_With_Send_Now_Option_(Error)" status="passed"
+         classname="Test_Create_Campaign_Options_Send_Schedule_Voice_Bulk" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Create_Campaign_Options_Send_Schedule_Voice_Bulk_1   @smoke_test   @Test_Create_Campaign_Options_Send_Schedule_Voice_Bulk
+                scenario: Create campaign with send now option (error)
+                given I am on the campaign settings page &#34;Bulk Voice&#34; in &#34;Voice&#34; ... passed in 21.81s 
+e                given I select a company and a campaign name empty or invalid ... passed in 2.038s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.352s 
+                then I see the error message &#34;The account field is mandatory&#34; in &#34;//div [@class=&#39;ant-notification-notice-description&#39;]&#34; ... passed in 2.077s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="32.67803740501404" name="Create_Campaign_With_Schedule_Option_(Error)" status="passed"
+         classname="Test_Create_Campaign_Options_Send_Schedule_Voice_Bulk" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Create_Campaign_Options_Send_Schedule_Voice_Bulk_3   @Test_Create_Campaign_Options_Send_Schedule_Voice_Bulk
+                scenario: Create campaign with schedule option (error)
+                given I am on the campaign settings page &#34;Bulk Voice&#34; in &#34;Voice&#34; ... passed in 21.67s 
+e                given I select a company, and a name for the test &#34;PRUEBAS AUTOMATIZADAS&#34; ... passed in 4.265s 
+                when I select Send now/schedule option &#34;2&#34; ... passed in 1.357s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.295s 
+                then I see the error message &#34;You need to properly schedule the campaign&#34; in &#34;//div[@class=&#39;ant-notification-notice-description&#39;]&#34; ... passed in 2.088s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="31.171900510787964" name="Create_Campaign_With_Send_Now_Option" status="passed"
+         classname="Test_Create_Campaign_Options_Send_Schedule_Voice_Bulk" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Create_Campaign_Options_Send_Schedule_Voice_Bulk_2   @Test_Create_Campaign_Options_Send_Schedule_Voice_Bulk
+                scenario: Create campaign with send now option
+                given I am on the campaign settings page &#34;Bulk Voice&#34; in &#34;Voice&#34; ... passed in 20.25s 
+e                given I select a company, and a name for the test &#34;PRUEBAS AUTOMATIZADAS&#34; ... passed in 4.222s 
+                when I select Send now/schedule option &#34;1&#34; ... passed in 1.253s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.401s 
+                then I am redirected to the destination creation page ... passed in 2.048s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="32.31908941268921" name="Create_Campaign_With_Schedule_Option_(Warning_Percentage_100%)" status="passed"
+         classname="Test_Create_Campaign_Options_Send_Schedule_Voice_Bulk" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Create_Campaign_Options_Send_Schedule_Voice_Bulk_5   @Test_Create_Campaign_Options_Send_Schedule_Voice_Bulk
+                scenario: Create campaign with schedule option (warning percentage 100%)
+                given I am on the campaign settings page &#34;Bulk Voice&#34; in &#34;Voice&#34; ... passed in 22.36s 
+e                given I select a company, and a name for the test &#34;PRUEBAS AUTOMATIZADAS&#34; ... passed in 4.156s 
+                when I select Send now/schedule option &#34;2&#34; ... passed in 1.288s 
+                when I enter a percentage &#34;100&#34; in the phase ... passed in 1.146s 
+                when I click the add phase ... passed in 1.273s 
+                then I see the error message &#34;Please, check the percentages assigned to each phase; the total amount must be 100%&#34; in &#34;(//div[@class=&#39;ant-notification-notice-description&#39;])[1]&#34; ... passed in 2.09s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="38.63795471191406" name="Create_Campaign_With_Schedule_Option_(Error_Date_)" status="passed"
+         classname="Test_Create_Campaign_Options_Send_Schedule_Voice_Bulk" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Create_Campaign_Options_Send_Schedule_Voice_Bulk_6   @Test_Create_Campaign_Options_Send_Schedule_Voice_Bulk
+                scenario: Create campaign with schedule option (error date )
+                given I am on the campaign settings page &#34;Bulk Voice&#34; in &#34;Voice&#34; ... passed in 25.06s 
+e                given I select a company, and a name for the test &#34;PRUEBAS AUTOMATIZADAS&#34; ... passed in 3.906s 
+                when I select Send now/schedule option &#34;2&#34; ... passed in 1.275s 
+                when I enter a percentage &#34;100&#34; in the phase ... passed in 1.197s 
+                when I enter the today date in the phase ... passed in 1.804s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.331s 
+                then I see the error message &#34;Every phase must have a configured date&#34; in &#34;(//div[@class=&#39;ant-notification-notice-description&#39;])[1]&#34; ... passed in 2.06s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="43.75647282600403" name="Create_Campaign_With_Schedule_Option" status="passed"
+         classname="Test_Create_Campaign_Options_Send_Schedule_Voice_Bulk" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Create_Campaign_Options_Send_Schedule_Voice_Bulk_7   @Test_Create_Campaign_Options_Send_Schedule_Voice_Bulk
+                scenario: Create campaign with schedule option
+                given I am on the campaign settings page &#34;Bulk Voice&#34; in &#34;Voice&#34; ... passed in 22.98s 
+e                given I select a company, and a name for the test &#34;PRUEBAS AUTOMATIZADAS&#34; ... passed in 3.959s 
+                when I select Send now/schedule option &#34;2&#34; ... passed in 1.284s 
+                when I enter a percentage &#34;50&#34; in the phase ... passed in 1.256s 
+                when I enter the &#34;today&#34; date in the phase ... passed in 1.752s 
+                when I enter the &#34;now&#34; hour ... passed in 1.46s 
+                when I click the add phase ... passed in 1.31s 
+                when I enter a percentage &#34;50&#34; in the phase ... passed in 1.201s 
+                when I enter the &#34;tomorrow&#34; date in the phase ... passed in 1.607s 
+                when I enter the &#34;tomorrow&#34; hour ... passed in 1.553s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.35s 
+                then I am redirected to the destination creation page ... passed in 2.047s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="31.78201460838318" name="Create_Campaign_With_Schedule_Option_(Error_Whit_Percentage)" status="passed"
+         classname="Test_Create_Campaign_Options_Send_Schedule_Voice_Bulk" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Create_Campaign_Options_Send_Schedule_Voice_Bulk_4   @Test_Create_Campaign_Options_Send_Schedule_Voice_Bulk
+                scenario: Create campaign with schedule option (error whit percentage)
+                given I am on the campaign settings page &#34;Bulk Voice&#34; in &#34;Voice&#34; ... passed in 23.11s 
+e                given I select a company, and a name for the test &#34;PRUEBAS AUTOMATIZADAS&#34; ... passed in 3.986s 
+                when I select Send now/schedule option &#34;2&#34; ... passed in 1.309s 
+                when I click the add phase ... passed in 1.264s 
+                then I see the error message &#34;The percentage can not be zero&#34; in &#34;(//div[@class=&#39;ant-notification-notice-description&#39;])[1]&#34; ... passed in 2.117s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

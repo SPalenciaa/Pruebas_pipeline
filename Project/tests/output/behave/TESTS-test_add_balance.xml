@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="98.02823877334595" tests='3' skipped='0'
+name="Test_Add_Balance" failures='0' errors='0'><testcase time="34.17030906677246" name="Add_100_Balance" status="passed"
+         classname="Test_Add_Balance" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Add_Balance_1   @Test_Add_Balance
+                scenario: Add 100 balance
+                given I go to the exchange rate to add balance to the company Identity ... passed in 20.19s 
+                when I click the add balance button ... passed in 3.351s 
+e                when I write &#34;1&#34; usd add balance ... passed in 2.212s 
+                when I confirm the add balance ... passed in 4.753s 
+                when I am see the confirmation alert, &#34;TRANSACTION SUCCESSFUL&#34; in &#34;//div[@class=&#39;ant-notification-notice-message&#39;]&#34; ... passed in 3.665s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="30.71029281616211" name="Add_0_Balance_(Error)" status="passed"
+         classname="Test_Add_Balance" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @smoketest   @Test_Add_Balance_2   @Test_Add_Balance
+                scenario: Add 0 balance (error)
+                given I go to the exchange rate to add balance to the company Identity ... passed in 20.08s 
+                when I click the add balance button ... passed in 3.389s 
+e                when I confirm the add balance ... passed in 5.17s 
+                when I see the alert error &#34;Please input the balance!&#34; ... passed in 2.073s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="33.14763689041138" name="Add_1000000000000000_Balance_(Error)" status="passed"
+         classname="Test_Add_Balance" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Add_Balance_3   @Test_Add_Balance
+                scenario: Add 1000000000000000 balance (error)
+                given I go to the exchange rate to add balance to the company Identity ... passed in 20.73s 
+                when I click the add balance button ... passed in 3.351s 
+e                when I write &#34;100000000000000000000000000000&#34; usd add balance ... passed in 2.319s 
+                when I confirm the add balance ... passed in 4.677s 
+                then I see the error message &#34;An error ocurred adding balance&#34; in &#34;//div[@class=&#39;ant-notification-notice-description&#39;]&#34; ... passed in 2.069s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

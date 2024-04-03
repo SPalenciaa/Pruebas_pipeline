@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="94.0602240562439" tests='2' skipped='0'
+name="Test_Create_Contacts_Map_Step" failures='2' errors='0'><testcase time="46.61881709098816" name="Unselect_Mobilenumber_(Error)" status="failed"
+         classname="Test_Create_Contacts_Map_Step" >
+            <failure message="'global_functions' object has no attribute 'evidence_path'" type="AssertionError">
+                    <![CDATA[ Failing step: given I am on the create contacts map page ... failed in 46.62s  Location:0
+                        {'step_type': 'given', 'name': 'I am on the create contacts map page', 'text': 'None', 'status': 'failed', 'duration': 46.61881709098816, 'error_msg': "'global_functions' object has no attribute 'evidence_path'", 'error_lines': ['  File "/usr/local/lib/python3.8/dist-packages/behave/model.py", line 1329, in run\n    match.run(runner.context)\n', '  File "/usr/local/lib/python3.8/dist-packages/behave/matchers.py", line 98, in run\n    self.func(context, *args, **kwargs)\n', '  File "steps/test_create_contacts_page_map_step.py", line 25, in test_step_impl\n    context.map_page.verify_list_groups_contacts()\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/contacts_map__page.py", line 21, in verify_list_groups_contacts\n    self.global_function.attach_screenshot_to_report()\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/global_functions.py", line 184, in attach_screenshot_to_report\n    screenshot_path = os.path.join(self.evidence_path, f"{name}.png")\n'], 'hash': 32079619, 'index': 0, 'background': 'True'}
+                    ]]>
+                </failure><system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Create_Contacts_Map_Step_1   @Test_Create_Contacts_Map_Step
+                scenario: Unselect MobileNumber (error)
+                given I am on the create contacts map page ... failed in 46.62s 
+e                when I click on the &#34;next&#34; button to continue ... skipped in 0.0s 
+                then I see the error message &#34;You need to select the column that contains the phone number&#34; in &#34;(//div[@class=&#39;ant-notification-notice-description&#39;])[1]&#34; ... skipped in 0.0s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="47.44140696525574" name="Select_Mobile_Number_And_The_Wildcards" status="failed"
+         classname="Test_Create_Contacts_Map_Step" >
+            <failure message="'global_functions' object has no attribute 'evidence_path'" type="AssertionError">
+                    <![CDATA[ Failing step: given I am on the create contacts map page ... failed in 47.44s  Location:0
+                        {'step_type': 'given', 'name': 'I am on the create contacts map page', 'text': 'None', 'status': 'failed', 'duration': 47.44140696525574, 'error_msg': "'global_functions' object has no attribute 'evidence_path'", 'error_lines': ['  File "/usr/local/lib/python3.8/dist-packages/behave/model.py", line 1329, in run\n    match.run(runner.context)\n', '  File "/usr/local/lib/python3.8/dist-packages/behave/matchers.py", line 98, in run\n    self.func(context, *args, **kwargs)\n', '  File "steps/test_create_contacts_page_map_step.py", line 25, in test_step_impl\n    context.map_page.verify_list_groups_contacts()\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/contacts_map__page.py", line 21, in verify_list_groups_contacts\n    self.global_function.attach_screenshot_to_report()\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/global_functions.py", line 184, in attach_screenshot_to_report\n    screenshot_path = os.path.join(self.evidence_path, f"{name}.png")\n'], 'hash': 32079619, 'index': 0, 'background': 'True'}
+                    ]]>
+                </failure><system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Create_Contacts_Map_Step_2   @Test_Create_Contacts_Map_Step
+                scenario: Select mobile number and the wildcards
+                given I am on the create contacts map page ... failed in 47.44s 
+e                when I select &#34;MobileNumber&#34; of the csv ... skipped in 0.0s 
+                when I select the wildcards to use ... skipped in 0.0s 
+                when I click on the &#34;next&#34; button to continue ... skipped in 0.0s 
+                when I redirect at the confirmation page ... skipped in 0.0s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

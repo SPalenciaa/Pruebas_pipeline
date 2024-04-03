@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="116.54209876060486" tests='4' skipped='0'
+name="Test_Select_Company_All" failures='0' errors='0'><testcase time="29.87458348274231" name="Select_Company-Account_From_Company_Menu" status="passed"
+         classname="Test_Select_Company_All" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Select_Company_All_1   @smoke_test   @Smoke_Test   @Test_Select_Company_All
+                scenario: Select Company-Account from Company menu
+                given I am on the initial menu and click in &#34;Company Home&#34; ... passed in 17.51s 
+e                when I select &#34;Accounts&#34; from the company-Home menu ... passed in 8.135s 
+                then I am redirected to the campaign Account page ... passed in 4.23s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="29.479000091552734" name="Select_Company-Users_From_Company_Menu" status="passed"
+         classname="Test_Select_Company_All" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Select_Company_All_2   @smoke_test   @Smoke_Test   @Test_Select_Company_All
+                scenario: Select Company-Users from Company menu
+                given I am on the initial menu and click in &#34;Company Home&#34; ... passed in 17.1s 
+e                when I select &#34;Users&#34; from the company-Home menu ... passed in 8.155s 
+                then I am redirected to the campaign Users page ... passed in 4.227s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="28.56877636909485" name="Select_Company-History_Balance_From_Company_Menu" status="passed"
+         classname="Test_Select_Company_All" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Select_Company_All_4   @smoke_test   @Smoke_Test   @Test_Select_Company_All
+                scenario: Select Company-History_Balance from Company menu
+                given I am on the initial menu and click in &#34;Company Home&#34; ... passed in 16.68s 
+e                when I select &#34;Balance History&#34; from the company-Home menu ... passed in 8.157s 
+                then I am redirected to the campaign History Balance page ... passed in 3.734s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="28.619738817214966" name="Select_Company-Rates_From_Company_Menu" status="passed"
+         classname="Test_Select_Company_All" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Select_Company_All_3   @smoke_test   @Smoke_Test   @Test_Select_Company_All
+                scenario: Select Company-Rates from Company menu
+                given I am on the initial menu and click in &#34;Company Home&#34; ... passed in 17.23s 
+e                when I select &#34;Rates&#34; from the company-Home menu ... passed in 8.165s 
+                then I am redirected to the campaign Rates page ... passed in 3.222s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

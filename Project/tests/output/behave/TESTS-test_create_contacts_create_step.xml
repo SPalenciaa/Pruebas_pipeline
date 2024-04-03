@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="117.61203050613403" tests='4' skipped='0'
+name="Test_Create_Contacts_Create_Step" failures='0' errors='0'><testcase time="28.593294143676758" name="Create_Contacts_Data_Empty_(Error)" status="passed"
+         classname="Test_Create_Contacts_Create_Step" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Create_Contacts_Create_Step_1   @smoke_test   @Test_Create_Contacts_Create_Step
+                scenario: Create contacts data empty (error)
+                given I am on the contacts &#34;Create&#34; page ... passed in 21.15s 
+e                when I am not write the list name ... passed in 2.002s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.351s 
+                then I see the error message &#34;This field is mandatory&#34; in &#34;//div[contains(text(),&#39;This field is mandatory&#39;)]&#34; ... passed in 2.089s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="28.881409645080566" name="Create_Contacts_Whit_List_Name_(Error)" status="passed"
+         classname="Test_Create_Contacts_Create_Step" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Create_Contacts_Create_Step_2   @smoke_test   @Test_Create_Contacts_Create_Step
+                scenario: Create contacts whit list name (error)
+                given I am on the contacts &#34;Create&#34; page ... passed in 21.88s 
+e                when I write the name for the list name &#34;PRUEBAS CONTACTOS&#34; ... passed in 1.598s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.312s 
+                then I see the error message &#34;You need to select an account&#34; in &#34;//div[@class=&#39;ant-notification-notice-description&#39;]&#34; ... passed in 2.091s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="27.923140048980713" name="Upload_Csv_File_Invalid_(Error)" status="passed"
+         classname="Test_Create_Contacts_Create_Step" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Create_Contacts_Create_Step_3   @Test_Create_Contacts_Create_Step
+                scenario: Upload CSV file invalid (error)
+                given I am on the contacts &#34;Create&#34; page ... passed in 18.44s 
+e                when I write the name for the list name &#34;PRUEBAS CONTACTOS&#34; ... passed in 1.443s 
+                when I select the account &#34;Identidad&#34; ... passed in 2.648s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.318s 
+                then I see the error message &#34;You need to upload a file&#34; in &#34;//div[@class=&#39;ant-notification-notice-description&#39;]&#34; ... passed in 2.078s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="32.214186668395996" name="Create_Contacts_Create_Step" status="passed"
+         classname="Test_Create_Contacts_Create_Step" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Create_Contacts_Create_Step_4   @Test_Create_Contacts_Create_Step
+                scenario: Create contacts create step
+                given I am on the contacts &#34;Create&#34; page ... passed in 18.64s 
+e                when I write the name for the list name &#34;PRUEBAS CONTACTOS&#34; ... passed in 1.418s 
+                when I select the account &#34;Identidad&#34; ... passed in 2.579s 
+                when I upload a valid CSV file with phone numbers ... passed in 4.174s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.356s 
+                when I redirect at the map page ... passed in 2.044s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

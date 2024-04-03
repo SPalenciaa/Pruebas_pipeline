@@ -1,0 +1,12 @@
+@Test_Add_Balance
+Feature: Test_Add_Balance # features/test_add_balance.feature:2
+
+  Background:   # features/test_add_balance.feature:4
+
+  @smoketest @Test_Add_Balance_2 @Test_Add_Balance
+  Scenario: Add 0 balance (error)                                          # features/test_add_balance.feature:17
+    Given I go to the exchange rate to add balance to the company Identity # steps/test_add_balance_step.py:12
+    When I click the add balance button                                    # steps/test_add_balance_step.py:25
+    When I confirm the add balance                                         # steps/test_add_balance_step.py:36
+    When I see the alert error "Please input the balance!"                 # steps/test_add_balance_step.py:43
+

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="305.88530564308167" tests='7' skipped='0'
+name="Test_Company_Users_Create_User_" failures='2' errors='0'><testcase time="37.96194529533386" name="Create_User_Formulary_(Error)" status="passed"
+         classname="Test_Company_Users_Create_User" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Company_Users_Create_User_1   @smoke_test   @Test_Company_Users_Create_User
+                scenario: create user formulary (error)
+                given I am on the users company page ... passed in 17.81s 
+e                when I click button for the create user ... passed in 7.185s 
+                when I see the create user screen ... passed in 0.02389s 
+                when I click the create user button ... passed in 3.312s 
+                when I confirm the create user ... passed in 1.363s 
+                then I see the error message &#34;Please input the first name!&#34; in &#34;//div[contains(text(),&#39;Please input the first name!&#39;)]&#34; ... passed in 2.088s 
+                then I see the error message &#34;Please input the email!&#34; in &#34;//div[contains(text(),&#39;Please input the email!&#39;)]&#34; ... passed in 2.068s 
+                then I see the error message &#34;Please select the role!&#34; in &#34;//div[contains(text(),&#39;Please select the role!&#39;)]&#34; ... passed in 2.056s 
+                then I see the error message &#34;Please select the account!&#34; in &#34;//div[contains(text(),&#39;Please select the account!&#39;)]&#34; ... passed in 2.053s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="35.73927307128906" name="Create_User_Formulary_Send_Name_Only_(Error)" status="passed"
+         classname="Test_Company_Users_Create_User" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Company_Users_Create_User_2   @Test_Company_Users_Create_User
+                scenario: create user formulary send name only (error)
+                given I am on the users company page ... passed in 17.95s 
+e                when I click button for the create user ... passed in 5.691s 
+                when I see the create user screen ... passed in 0.0214s 
+                when I write the &#34;Felipe&#34; in &#34;form_in_modal_firstname&#34; ... passed in 1.173s 
+                when I click the create user button ... passed in 3.313s 
+                when I confirm the create user ... passed in 1.382s 
+                then I see the error message &#34;Please input the email!&#34; in &#34;//div[contains(text(),&#39;Please input the email!&#39;)]&#34; ... passed in 2.075s 
+                then I see the error message &#34;Please select the role!&#34; in &#34;//div[contains(text(),&#39;Please select the role!&#39;)]&#34; ... passed in 2.06s 
+                then I see the error message &#34;Please select the account!&#34; in &#34;//div[contains(text(),&#39;Please select the account!&#39;)]&#34; ... passed in 2.077s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="36.09651231765747" name="Create_User_Formulary_Send_Email_Only_(Error)" status="passed"
+         classname="Test_Company_Users_Create_User" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Company_Users_Create_User_3   @Test_Company_Users_Create_User
+                scenario: create user formulary send email only (error)
+                given I am on the users company page ... passed in 18.13s 
+e                when I click button for the create user ... passed in 5.71s 
+                when I see the create user screen ... passed in 0.03064s 
+                when I write the &#34;Felipe@pruebasautmoidentidad.oli&#34; in &#34;form_in_modal_email&#34; ... passed in 1.38s 
+                when I click the create user button ... passed in 3.294s 
+                when I confirm the create user ... passed in 1.354s 
+                then I see the error message &#34;Please input the first name!&#34; in &#34;//div[contains(text(),&#39;Please input the first name!&#39;)]&#34; ... passed in 2.081s 
+                then I see the error message &#34;Please select the role!&#34; in &#34;//div[contains(text(),&#39;Please select the role!&#39;)]&#34; ... passed in 2.063s 
+                then I see the error message &#34;Please select the account!&#34; in &#34;//div[contains(text(),&#39;Please select the account!&#39;)]&#34; ... passed in 2.058s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="37.31331443786621" name="Create_User_Formulary_Select_Role_Only_(Error)" status="passed"
+         classname="Test_Company_Users_Create_User" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Company_Users_Create_User_4   @Test_Company_Users_Create_User
+                scenario: create user formulary select role only (error)
+                given I am on the users company page ... passed in 18.25s 
+e                when I click button for the create user ... passed in 5.621s 
+                when I see the create user screen ... passed in 0.02469s 
+                when I select &#34;Account&#34; in &#34;form_in_modal_role&#34; ... passed in 2.59s 
+                when I click the create user button ... passed in 3.296s 
+                when I confirm the create user ... passed in 1.33s 
+                then I see the error message &#34;Please input the first name!&#34; in &#34;//div[contains(text(),&#39;Please input the first name!&#39;)]&#34; ... passed in 2.08s 
+                then I see the error message &#34;Please input the email!&#34; in &#34;//div[contains(text(),&#39;Please input the email!&#39;)]&#34; ... passed in 2.065s 
+                then I see the error message &#34;Please select the account!&#34; in &#34;//div[contains(text(),&#39;Please select the account!&#39;)]&#34; ... passed in 2.058s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="40.509692907333374" name="Create_User_Formulary_Select_Accounts_Only_(Error)" status="passed"
+         classname="Test_Company_Users_Create_User" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Company_Users_Create_User_5   @smoke_test   @Test_Company_Users_Create_User
+                scenario: create user formulary select accounts only (error)
+                given I am on the users company page ... passed in 21.55s 
+e                when I click button for the create user ... passed in 5.596s 
+                when I see the create user screen ... passed in 0.01608s 
+                when I select &#34;QXTL&#34; in &#34;form_in_modal_accounts&#34; ... passed in 2.584s 
+                when I click the create user button ... passed in 3.283s 
+                when I confirm the create user ... passed in 1.296s 
+                then I see the error message &#34;Please input the first name!&#34; in &#34;//div[contains(text(),&#39;Please input the first name!&#39;)]&#34; ... passed in 2.077s 
+                then I see the error message &#34;Please input the email!&#34; in &#34;//div[contains(text(),&#39;Please input the email!&#39;)]&#34; ... passed in 2.062s 
+                then I see the error message &#34;Please select the role!&#34; in &#34;//div[contains(text(),&#39;Please select the role!&#39;)]&#34; ... passed in 2.047s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="59.11277174949646" name="Create_User_Done_(Error)" status="failed"
+         classname="Test_Company_Users_Create_User" >
+            <failure message="'global_functions' object has no attribute 'evidence_path'" type="AssertionError">
+                    <![CDATA[ Failing step: then I see the error message "ERROR" in "//div[@class='ant-notification-notice-message']" ... failed in 12.08s  Location:11
+                        {'step_type': 'then', 'name': 'I see the error message "ERROR" in "//div[@class=\'ant-notification-notice-message\']"', 'text': 'None', 'status': 'failed', 'duration': 12.078272819519043, 'error_msg': "'global_functions' object has no attribute 'evidence_path'", 'error_lines': ['  File "/usr/local/lib/python3.8/dist-packages/behave/model.py", line 1329, in run\n    match.run(runner.context)\n', '  File "/usr/local/lib/python3.8/dist-packages/behave/matchers.py", line 98, in run\n    self.func(context, *args, **kwargs)\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/steps/test_common_step.py", line 20, in test_step_impl\n    context.common_instance.error_message_matches(expected_message, xpath)\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/common_page.py", line 40, in error_message_matches\n    self.global_function.attach_screenshot_to_report()\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/global_functions.py", line 184, in attach_screenshot_to_report\n    screenshot_path = os.path.join(self.evidence_path, f"{name}.png")\n'], 'hash': 85040021, 'index': 11}
+                    ]]>
+                </failure><system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Company_Users_Create_User_6   @Test_Company_Users_Create_User
+                scenario: Create User Done (Error)
+                given I am on the users company page ... passed in 18.3s 
+e                when I click button for the create user ... passed in 5.601s 
+                when I see the create user screen ... passed in 0.01768s 
+                when I write the &#34;PRUEBAS&#34; in &#34;form_in_modal_firstname&#34; ... passed in 1.14s 
+                when I write the &#34;AUTOMATIZADAS&#34; in &#34;form_in_modal_lastname&#34; ... passed in 1.256s 
+                when I write the &#34;samaya@identidadtech.com&#34; in &#34;form_in_modal_email&#34; ... passed in 1.218s 
+                when I write the &#34;Pruebas Automatizadas&#34; in &#34;form_in_modal_description&#34; ... passed in 1.203s 
+                when I write the &#34;3167628372&#34; in &#34;form_in_modal_phone&#34; ... passed in 1.265s 
+                when I select &#34;Account&#34; in &#34;form_in_modal_role&#34; ... passed in 2.595s 
+                when I select &#34;Recursos Humans&#34; in &#34;form_in_modal_accounts&#34; ... passed in 6.344s 
+                when I click the create user button ... passed in 3.063s 
+                when I confirm the create user ... passed in 5.028s 
+                then I see the error message &#34;ERROR&#34; in &#34;//div[@class=&#39;ant-notification-notice-message&#39;]&#34; ... failed in 12.08s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="59.151795864105225" name="Create_User_Done" status="failed"
+         classname="Test_Company_Users_Create_User" >
+            <failure message="'global_functions' object has no attribute 'evidence_path'" type="AssertionError">
+                    <![CDATA[ Failing step: when I am see the confirmation alert, "ERROR" in "//div[@class='ant-notification-notice-message']" ... failed in 12.08s  Location:11
+                        {'step_type': 'when', 'name': 'I am see the confirmation alert, "ERROR" in "//div[@class=\'ant-notification-notice-message\']"', 'text': 'None', 'status': 'failed', 'duration': 12.080255031585693, 'error_msg': "'global_functions' object has no attribute 'evidence_path'", 'error_lines': ['  File "/usr/local/lib/python3.8/dist-packages/behave/model.py", line 1329, in run\n    match.run(runner.context)\n', '  File "/usr/local/lib/python3.8/dist-packages/behave/matchers.py", line 98, in run\n    self.func(context, *args, **kwargs)\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/steps/test_common_step.py", line 26, in test_step_impl\n    context.common_instance.error_message_matches(alert_confirmation, xpath)\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/common_page.py", line 40, in error_message_matches\n    self.global_function.attach_screenshot_to_report()\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/global_functions.py", line 184, in attach_screenshot_to_report\n    screenshot_path = os.path.join(self.evidence_path, f"{name}.png")\n'], 'hash': 65938931, 'index': 11}
+                    ]]>
+                </failure><system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Company_Users_Create_User_7   @Test_Company_Users_Create_User
+                scenario: Create User Done
+                given I am on the users company page ... passed in 18.15s 
+e                when I click button for the create user ... passed in 5.652s 
+                when I see the create user screen ... passed in 0.04508s 
+                when I write the &#34;PRUEBAS&#34; in &#34;form_in_modal_firstname&#34; ... passed in 1.274s 
+                when I write the &#34;AUTOMATIZADAS Eliminar&#34; in &#34;form_in_modal_lastname&#34; ... passed in 1.234s 
+                when I write the &#34;Eliziuyuiyxz@pruebasa.oiu&#34; in &#34;form_in_modal_email&#34; ... passed in 1.276s 
+                when I write the &#34;Pruebas Automatizadas&#34; in &#34;form_in_modal_description&#34; ... passed in 1.101s 
+                when I write the &#34;3167628372&#34; in &#34;form_in_modal_phone&#34; ... passed in 1.271s 
+                when I select &#34;Account&#34; in &#34;form_in_modal_role&#34; ... passed in 2.582s 
+                when I select &#34;Recursos Humans&#34; in &#34;form_in_modal_accounts&#34; ... passed in 6.376s 
+                when I click the create user button ... passed in 3.079s 
+                when I confirm the create user ... passed in 5.035s 
+                when I am see the confirmation alert, &#34;ERROR&#34; in &#34;//div[@class=&#39;ant-notification-notice-message&#39;]&#34; ... failed in 12.08s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="381.56614923477173" tests='5' skipped='0'
+name="Test_Custom_Message_Voice_Bulk" failures='2' errors='0'><testcase time="61.844446897506714" name="Create_Custom_Message_Only_Id_(Error)" status="passed"
+         classname="Test_Custom_Message_Voice_Bulk" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Custom_Message_VOICE_Bulk_2   @Test_Custom_Message_VOICE_Bulk
+                scenario: Create Custom Message only id (error)
+                given I am on the message creation page &#34;Bulk Voice&#34; in &#34;Voice&#34; ... passed in 53.23s 
+e                when I enter a valid campaign ID ... passed in 3.242s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.288s 
+                then I see the error message &#34;The message is mandatory&#34; in &#34;//div[normalize-space()=&#39;The message is mandatory&#39;]&#34; ... passed in 2.089s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="75.91306900978088" name="Bug_Yp_When_We_Pass_Without_Selecting_The_Voice_Of_The_Call_And_We_Do_A_Test_Test,_The_Page_Stays_Loading_Httpsidentidadtech-Team.Monday.Comboards5081280383Pulses5385466403" status="passed"
+         classname="Test_Custom_Message_Voice_Bulk" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Custom_Message_VOICE_Bulk_5   @Test_Custom_Message_VOICE_Bulk
+                scenario: BUG YP when we pass without selecting the voice of the call and we do a test test, the page stays loading https://identidadtech-team.monday.com/boards/5081280383/pulses/5385466403
+                given I am on the message creation page &#34;Bulk Voice&#34; in &#34;Voice&#34; ... passed in 53.45s 
+e                when I enter a valid campaign ID ... passed in 3.252s 
+                when I create a custom message with the wildcards ... passed in 13.78s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.315s 
+                then I see the error message &#34;The voice and gender are mandatory&#34; in &#34;(//div[@class=&#39;ant-notification-notice-description&#39;])[1]&#34; ... passed in 2.114s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="91.45069932937622" name="Create_Custom_Message" status="failed"
+         classname="Test_Custom_Message_Voice_Bulk" >
+            <failure message="'global_functions' object has no attribute 'evidence_path'" type="AssertionError">
+                    <![CDATA[ Failing step: when I verify my message ... failed in 15.1s  Location:2
+                        {'step_type': 'when', 'name': 'I verify my message', 'text': 'None', 'status': 'failed', 'duration': 15.102973461151123, 'error_msg': "'global_functions' object has no attribute 'evidence_path'", 'error_lines': ['  File "/usr/local/lib/python3.8/dist-packages/behave/model.py", line 1329, in run\n    match.run(runner.context)\n', '  File "/usr/local/lib/python3.8/dist-packages/behave/matchers.py", line 98, in run\n    self.func(context, *args, **kwargs)\n', '  File "steps/test_create_custom_message_step.py", line 50, in test_step_impl\n    context.custom_messages.verify_message_dynamic()\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/campaign_content_page.py", line 84, in verify_message_dynamic\n    self.global_function.attach_screenshot_to_report("error_verify_message_dynamic")\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/global_functions.py", line 184, in attach_screenshot_to_report\n    screenshot_path = os.path.join(self.evidence_path, f"{name}.png")\n'], 'hash': 81536023, 'index': 2}
+                    ]]>
+                </failure><system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Custom_Message_VOICE_Bulk_3   @Test_Custom_Message_VOICE_Bulk
+                scenario: Create Custom Message
+                given I am on the message creation page &#34;Bulk Voice&#34; in &#34;Voice&#34; ... passed in 54.19s 
+e                when I enter a valid campaign ID ... passed in 3.238s 
+                when I create a custom message with the wildcards and shortlink ... passed in 18.92s 
+                when I verify my message ... failed in 15.1s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="96.66118597984314" name="Carrying_Out_Test_Campaign_Message" status="failed"
+         classname="Test_Custom_Message_Voice_Bulk" >
+            <failure message="'global_functions' object has no attribute 'evidence_path'" type="AssertionError">
+                    <![CDATA[ Failing step: when I see the cost of the message ... failed in 15.11s  Location:6
+                        {'step_type': 'when', 'name': 'I see the cost of the message', 'text': 'None', 'status': 'failed', 'duration': 15.109897136688232, 'error_msg': "'global_functions' object has no attribute 'evidence_path'", 'error_lines': ['  File "/usr/local/lib/python3.8/dist-packages/behave/model.py", line 1329, in run\n    match.run(runner.context)\n', '  File "/usr/local/lib/python3.8/dist-packages/behave/matchers.py", line 98, in run\n    self.func(context, *args, **kwargs)\n', '  File "steps/test_create_custom_message_step.py", line 84, in test_step_impl\n    context.custom_messages.message_cost()\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/campaign_content_page.py", line 130, in message_cost\n    self.global_function.attach_screenshot_to_report("error_verify_message_dynamic")\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/global_functions.py", line 184, in attach_screenshot_to_report\n    screenshot_path = os.path.join(self.evidence_path, f"{name}.png")\n'], 'hash': 3545653, 'index': 6}
+                    ]]>
+                </failure><system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Custom_Message_VOICE_Bulk_4   @Test_Custom_Message_VOICE_Bulk
+                scenario: Carrying out test campaign Message
+                given I am on the message creation page &#34;Bulk Voice&#34; in &#34;Voice&#34; ... passed in 53.94s 
+e                when I enter a valid campaign ID ... passed in 3.252s 
+                when I create a custom message with the wildcards ... passed in 14.11s 
+                when I select the &#34;Female / English&#34; voice for the campaign ... passed in 2.671s 
+                when I preview the message ... passed in 0.01668s 
+                when I write the number for the test ... passed in 1.19s 
+                when I click on the &#34;Verify Cost&#34; button to continue ... passed in 6.37s 
+                when I see the cost of the message ... failed in 15.11s 
+                when I click on the &#34;send&#34; button and confirm to continue ... skipped in 0.0s 
+                when I am see the confirmation alert, &#34;The message was successfully sent&#34; in &#34;(//div[@class=&#39;ant-notification-notice-description&#39;])[1]&#34; ... skipped in 0.0s 
+                when I click on the &#34;next&#34; button to continue ... skipped in 0.0s 
+                then I am redirected to the summary page ... skipped in 0.0s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="55.69674801826477" name="Create_Custom_Message_Empty_(Error)" status="passed"
+         classname="Test_Custom_Message_Voice_Bulk" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Custom_Message_VOICE_Bulk_1   @Test_Custom_Message_VOICE_Bulk
+                scenario: Create Custom Message empty (error)
+                given I am on the message creation page &#34;Bulk Voice&#34; in &#34;Voice&#34; ... passed in 47.32s 
+e                when I am not write nothing ... passed in 3.003s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.298s 
+                then I see the error message &#34;The sender ID is mandatory&#34; in &#34;//div[normalize-space()=&#39;The sender ID is mandatory&#39;]&#34; ... passed in 2.075s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

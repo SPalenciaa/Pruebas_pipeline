@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="81.61043667793274" tests='2' skipped='0'
+name="Test_Templates_All" failures='2' errors='0'><testcase time="43.84369421005249" name="Filter_Templates" status="failed"
+         classname="Test_Select_Contacts_Menu_All" >
+            <failure message="'global_functions' object has no attribute 'evidence_path'" type="AssertionError">
+                    <![CDATA[ Failing step: when I see the template "Angie pruebas" ... failed in 19.13s  Location:3
+                        {'step_type': 'when', 'name': 'I see the template "Angie pruebas"', 'text': 'None', 'status': 'failed', 'duration': 19.129668474197388, 'error_msg': "'global_functions' object has no attribute 'evidence_path'", 'error_lines': ['  File "/usr/local/lib/python3.8/dist-packages/behave/model.py", line 1329, in run\n    match.run(runner.context)\n', '  File "/usr/local/lib/python3.8/dist-packages/behave/matchers.py", line 98, in run\n    self.func(context, *args, **kwargs)\n', '  File "steps/test_select_templates_all_step.py", line 38, in test_step_impl\n    context.templates_history_page.verify_info_filter(templateName.strip(\'"\'))\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/templates_history_page.py", line 49, in verify_info_filter\n    self.global_function.attach_screenshot_to_report(name="redirected_campaigns_menu_error")\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/global_functions.py", line 184, in attach_screenshot_to_report\n    screenshot_path = os.path.join(self.evidence_path, f"{name}.png")\n'], 'hash': 57989605, 'index': 3}
+                    ]]>
+                </failure><system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Select_Templates_2   @Test_Templates_Menu_All
+                scenario: Filter templates
+                given I am on the yp dashboard ... passed in 14.28s 
+e                when I select &#34;History&#34; from the Templates menu ... passed in 4.505s 
+                then I am redirected to the History Templates page step ... passed in 2.699s 
+                when I filter &#34;Angie pruebas&#34; ... passed in 3.234s 
+                when I see the template &#34;Angie pruebas&#34; ... failed in 19.13s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="37.76674246788025" name="Select_History_From_Templates_Menu" status="failed"
+         classname="Test_Select_Contacts_Menu_All" >
+            <failure message="'global_functions' object has no attribute 'evidence_path'" type="AssertionError">
+                    <![CDATA[ Failing step: when I see the templates "Prueba Test" ... failed in 17.12s  Location:2
+                        {'step_type': 'when', 'name': 'I see the templates "Prueba Test"', 'text': 'None', 'status': 'failed', 'duration': 17.119306802749634, 'error_msg': "'global_functions' object has no attribute 'evidence_path'", 'error_lines': ['  File "/usr/local/lib/python3.8/dist-packages/behave/model.py", line 1329, in run\n    match.run(runner.context)\n', '  File "/usr/local/lib/python3.8/dist-packages/behave/matchers.py", line 98, in run\n    self.func(context, *args, **kwargs)\n', '  File "steps/test_select_templates_all_step.py", line 28, in test_step_impl\n    context.templates_history_page.verify_info_template(templateName.strip(\'"\'))\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/templates_history_page.py", line 30, in verify_info_template\n    self.global_function.attach_screenshot_to_report()\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/global_functions.py", line 184, in attach_screenshot_to_report\n    screenshot_path = os.path.join(self.evidence_path, f"{name}.png")\n'], 'hash': 92931318, 'index': 2}
+                    ]]>
+                </failure><system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Select_Templates_1   @Test_Templates_Menu_All
+                scenario: Select History from Templates menu
+                given I am on the yp dashboard ... passed in 13.55s 
+e                when I select &#34;History&#34; from the Templates menu ... passed in 4.424s 
+                then I am redirected to the History Templates page step ... passed in 2.675s 
+                when I see the templates &#34;Prueba Test&#34; ... failed in 17.12s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

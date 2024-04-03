@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="393.0391936302185" tests='11' skipped='0'
+name="Test_Change_Rates" failures='3' errors='0'><testcase time="27.54320454597473" name="Error_When_Not_Sending_Empty_Rate_Changes_(Error)" status="failed"
+         classname="Test_Change_Rates" >
+            <failure message="'global_functions' object has no attribute 'evidence_path'" type="AssertionError">
+                    <![CDATA[ Failing step: then I see the error message "An error ocurred updating rates" in "//div[@class='ant-notification-notice-description']" ... failed in 2.073s  Location:2
+                        {'step_type': 'then', 'name': 'I see the error message "An error ocurred updating rates" in "//div[@class=\'ant-notification-notice-description\']"', 'text': 'None', 'status': 'failed', 'duration': 2.0725185871124268, 'error_msg': "'global_functions' object has no attribute 'evidence_path'", 'error_lines': ['  File "/usr/local/lib/python3.8/dist-packages/behave/model.py", line 1329, in run\n    match.run(runner.context)\n', '  File "/usr/local/lib/python3.8/dist-packages/behave/matchers.py", line 98, in run\n    self.func(context, *args, **kwargs)\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/steps/test_common_step.py", line 20, in test_step_impl\n    context.common_instance.error_message_matches(expected_message, xpath)\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/common_page.py", line 37, in error_message_matches\n    self.global_function.attach_screenshot_to_report()\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/global_functions.py", line 184, in attach_screenshot_to_report\n    screenshot_path = os.path.join(self.evidence_path, f"{name}.png")\n'], 'hash': 85040021, 'index': 2}
+                    ]]>
+                </failure><system-out>
+            <![CDATA[
+            @scenario.begin
+                @smoketest   @Test_Change_rates_1   @Test_Change_rates
+                scenario: Error when not sending empty rate changes (error)
+                given I am on the change rates page ... passed in 21.51s 
+                when I select &#34;Chage-rates&#34; of the company Identidad ... passed in 1.354s 
+e                when I click the &#34;save&#34; button ... passed in 1.261s 
+                when I confirm the update of rates ... passed in 1.341s 
+                then I see the error message &#34;An error ocurred updating rates&#34; in &#34;//div[@class=&#39;ant-notification-notice-description&#39;]&#34; ... failed in 2.073s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="27.366000175476074" name="View_Current_Rates_Voice" status="passed"
+         classname="Test_Change_Rates" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Change_rates_4   @Test_Change_rates
+                scenario: View current rates Voice
+                given I am on the change rates page ... passed in 21.83s 
+                when I select &#34;Chage-rates&#34; of the company Identidad ... passed in 1.33s 
+e                when I click the view current rates &#34;voice&#34; button ... passed in 1.081s 
+                then I see a current rates &#34;voice&#34; ... passed in 3.129s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="25.888705730438232" name="View_Current_Rates_Sms" status="passed"
+         classname="Test_Change_Rates" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Change_rates_3   @Test_Change_rates
+                scenario: View current rates Sms
+                given I am on the change rates page ... passed in 20.32s 
+                when I select &#34;Chage-rates&#34; of the company Identidad ... passed in 1.346s 
+e                when I click the view current rates &#34;sms&#34; button ... passed in 1.092s 
+                then I see a current rates &#34;sms&#34; ... passed in 3.133s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="28.79949641227722" name="Chage_Rates_Voice" status="passed"
+         classname="Test_Change_Rates" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Change_rates_6   @Test_Change_rates
+                scenario: Chage_Rates Voice
+                given I am on the change rates page ... passed in 18.03s 
+                when I select &#34;Chage-rates&#34; of the company Identidad ... passed in 1.335s 
+e                when I upload the rate &#34;draggerVoice&#34; archive &#34;TemplateRates-Voice-pruebas.csv&#34; ... passed in 4.128s 
+                when I click the &#34;save&#34; button ... passed in 1.255s 
+                when I confirm the update of rates ... passed in 1.392s 
+                when I am see the confirmation alert, &#34;TRANSACTION SUCCESSFUL&#34; in &#34;//div[@class=&#39;ant-notification-notice-message&#39;]&#34; ... passed in 2.66s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="37.147392988204956" name="Chage_Rates_Sms" status="passed"
+         classname="Test_Change_Rates" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Change_rates_5   @Test_Change_rates
+                scenario: Chage_Rates Sms
+                given I am on the change rates page ... passed in 20.04s 
+                when I select &#34;Chage-rates&#34; of the company Identidad ... passed in 1.336s 
+e                when I upload the rate &#34;draggerSms&#34; archive &#34;TemplateRates-SMS-pruebas.csv&#34; ... passed in 4.136s 
+                when I click the &#34;save&#34; button ... passed in 1.267s 
+                when I confirm the update of rates ... passed in 1.396s 
+                when I am see the confirmation alert, &#34;TRANSACTION SUCCESSFUL&#34; in &#34;//div[@class=&#39;ant-notification-notice-message&#39;]&#34; ... passed in 8.972s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="24.061826705932617" name="Chage_Rates_Voice_Confirmation" status="passed"
+         classname="Test_Change_Rates" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Change_rates_6_1   @Test_Change_rates
+                scenario: Chage_Rates Voice confirmation
+                given I am on the change rates page ... passed in 20.65s 
+                when I select &#34;Chage-rates&#34; of the company Identidad ... passed in 1.323s 
+e                when I click the view current rates &#34;voice&#34; button ... passed in 1.087s 
+                when I see the efective rate now ... passed in 1.007s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="38.604552030563354" name="Chage_Rates_Sms_Confirmation" status="failed"
+         classname="Test_Change_Rates" >
+            <failure message="Message: Date not found." type="AssertionError">
+                    <![CDATA[ Failing step: when I see the efective rate now ... failed in 15.13s  Location:1
+                        {'step_type': 'when', 'name': 'I see the efective rate now', 'text': 'None', 'status': 'failed', 'duration': 15.133800983428955, 'error_msg': 'Message: Date not found.', 'error_lines': ['  File "/usr/local/lib/python3.8/dist-packages/behave/model.py", line 1329, in run\n    match.run(runner.context)\n', '  File "/usr/local/lib/python3.8/dist-packages/behave/matchers.py", line 98, in run\n    self.func(context, *args, **kwargs)\n', '  File "steps/test_change_rates_step.py", line 68, in step_impl\n    context.change_rates.efective_rate()\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/change_rates_page.py", line 95, in efective_rate\n    raise TimeoutException("Date not found.") from e\n'], 'hash': 73478688, 'index': 1}
+                    ]]>
+                </failure><system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Change_rates_5_1   @Test_Change_rates
+                scenario: Chage_Rates Sms confirmation
+                given I am on the change rates page ... passed in 21.05s 
+                when I select &#34;Chage-rates&#34; of the company Identidad ... passed in 1.353s 
+e                when I click the view current rates &#34;sms&#34; button ... passed in 1.072s 
+                when I see the efective rate now ... failed in 15.13s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="82.77025032043457" name="Download_Csv_Of_Rates_Sms_And_Voice" status="failed"
+         classname="Test_Change_Rates" >
+            <failure message="La descarga no se completó a tiempo." type="AssertionError">
+                    <![CDATA[ Failing step: when I see a file downloaded "TemplateRates-SMS.csv" ... failed in 60.06s  Location:1
+                        {'step_type': 'when', 'name': 'I see a file downloaded "TemplateRates-SMS.csv"', 'text': 'None', 'status': 'failed', 'duration': 60.05974888801575, 'error_msg': 'La descarga no se completó a tiempo.', 'error_lines': ['  File "/usr/local/lib/python3.8/dist-packages/behave/model.py", line 1329, in run\n    match.run(runner.context)\n', '  File "/usr/local/lib/python3.8/dist-packages/behave/matchers.py", line 98, in run\n    self.func(context, *args, **kwargs)\n', '  File "steps/test_change_rates_step.py", line 48, in step_impl\n    context.change_rates.review_download(namearchive)\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/change_rates_page.py", line 168, in review_download\n    raise Exception("La descarga no se completó a tiempo.")\n'], 'hash': 54895202, 'index': 1}
+                    ]]>
+                </failure><system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Change_rates_2   @Test_Change_rates
+                scenario: Download csv of rates sms and voice
+                given I am on the change rates page ... passed in 20.09s 
+                when I select &#34;Chage-rates&#34; of the company Identidad ... passed in 1.332s 
+e                when I click download csv of &#34;SMS Rate Template&#34; ... passed in 1.292s 
+                when I see a file downloaded &#34;TemplateRates-SMS.csv&#34; ... failed in 60.06s 
+                when I click download csv of &#34;Voice Rate Template&#34; ... skipped in 0.0s 
+                when I see a file downloaded &#34;TemplateRates-Voice&#34; ... skipped in 0.0s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="22.657573699951172" name="Chage_Rates_(Error)" status="passed"
+         classname="Test_Change_Rates" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Change_rates
+                scenario: Chage_Rates (error)
+                given I am on the change rates page ... passed in 21.28s 
+                when I select &#34;Chage-rates&#34; of the company Identidad ... passed in 1.382s 
+e@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="42.79505372047424" name="Chage_Rates_Sms_And_Voice" status="passed"
+         classname="Test_Change_Rates" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Change_rates_7   @Test_Change_rates
+                scenario: Chage_Rates Sms and Voice
+                given I am on the change rates page ... passed in 20.99s 
+                when I select &#34;Chage-rates&#34; of the company Identidad ... passed in 1.34s 
+e                when I upload the voice_and__sms-rates archive &#34;TemplateRates-SMS.csv&#34;, &#34;TemplateRates-Voice.csv&#34; ... passed in 8.267s 
+                when I click the &#34;save&#34; button ... passed in 1.278s 
+                when I confirm the update of rates ... passed in 1.412s 
+                when I am see the confirmation alert, &#34;TRANSACTION SUCCESSFUL&#34; in &#34;//div[@class=&#39;ant-notification-notice-message&#39;]&#34; ... passed in 9.504s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="35.40513730049133" name="Chage_Rates_Sms_And_Voice_(Error_Update_Rates)" status="passed"
+         classname="Test_Change_Rates" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Change_rates_7_1   @Test_Change_rates
+                scenario: Chage_Rates Sms and Voice (ERROR Update Rates)
+                given I am on the change rates page ... passed in 20.43s 
+                when I select &#34;Chage-rates&#34; of the company Identidad ... passed in 1.343s 
+e                when I upload the voice_and__sms-rates archive &#34;TEMPLATES RATES SMS.csv&#34;, &#34;TEMPLATES RATES SMS.csv&#34; ... passed in 8.286s 
+                when I click the &#34;save&#34; button ... passed in 1.273s 
+                when I confirm the update of rates ... passed in 1.464s 
+                when I am see the confirmation alert, &#34;ERROR&#34; in &#34;//div[@class=&#39;ant-notification-notice-message&#39;]&#34; ... passed in 2.613s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

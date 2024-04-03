@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="52.39417314529419" tests='1' skipped='0'
+name="Test_Select_Account" failures='1' errors='0'><testcase time="52.39417314529419" name="Bug_Yp,_Las_Cuentas_No_Muestran_Ninguna_Informacion._(Copy)_Httpsidentidadtech-Team.Monday.Comboards5074630027Pulses5523638202" status="failed"
+         classname="Test_Select_Account" >
+            <failure message="'Company_Page_Account' object has no attribute 'action'" type="AssertionError">
+                    <![CDATA[ Failing step: then I view Balance in "Recursos Humans" Account ... failed in 18.17s  Location:3
+                        {'step_type': 'then', 'name': 'I view Balance in "Recursos Humans" Account', 'text': 'None', 'status': 'failed', 'duration': 18.169528484344482, 'error_msg': "'Company_Page_Account' object has no attribute 'action'", 'error_lines': ['  File "/usr/local/lib/python3.8/dist-packages/behave/model.py", line 1329, in run\n    match.run(runner.context)\n', '  File "/usr/local/lib/python3.8/dist-packages/behave/matchers.py", line 98, in run\n    self.func(context, *args, **kwargs)\n', '  File "steps/test_select_account.py", line 22, in step_impl\n    context.company_page_account.verify_company_change(company.strip(\'"\'))\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/company_account_page.py", line 43, in verify_company_change\n    self.action.attach_screenshot_to_report(name=f"select_option_error_change_channels", wait_time=5)\n'], 'hash': 56273810, 'index': 3}
+                    ]]>
+                </failure><system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_select_account_1   @Test_select_account
+                scenario: Bug YP, las cuentas no muestran ninguna información. (copy) https://identidadtech-team.monday.com/boards/5074630027/pulses/5523638202
+                given I login in yp platform ... passed in 17.96s 
+e                when I select &#34;Accounts&#34; of the menu lateral of the page ... passed in 8.131s 
+                then I am view account page ... passed in 4.805s 
+                when I select a &#34;4&#34; Account ... passed in 3.33s 
+                then I view Balance in &#34;Recursos Humans&#34; Account ... failed in 18.17s 
+                when I select a &#34;5&#34; Account ... skipped in 0.0s 
+                then I view Balance in &#34;Angie Mendoza&#34; Account ... skipped in 0.0s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

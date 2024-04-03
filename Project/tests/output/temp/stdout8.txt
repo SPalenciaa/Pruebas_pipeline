@@ -1,0 +1,20 @@
+@Test_Create_Campaign_Send_Schedule_Options_SMS_Shortlinks
+Feature: Test_Create_Campaign_Send_Schedule_Options_SMS_Shortlinks # features/test_create_campaign_options_send_schedule_SMS_Shortlinks.feature:2
+
+  Background:   # features/test_create_campaign_options_send_schedule_SMS_Shortlinks.feature:4
+
+  @Test_Create_Campaign_Send_Schedule_Options_SMS_Shortlinks_7 @Test_Create_Campaign_Send_Schedule_Options_SMS_Shortlinks
+  Scenario: Create campaign with schedule option                              # features/test_create_campaign_options_send_schedule_SMS_Shortlinks.feature:59
+    Given I am on the campaign settings page "Shortlink" in "SMS"             # steps/test_create_campaign_options_send_schedule_all_step.py:11
+    Given I select a company, and a name for the test "PRUEBAS AUTOMATIZADAS" # steps/test_create_campaign_options_send_schedule_all_step.py:24
+    When I select Send now/schedule option "2"                                # steps/test_create_campaign_options_send_schedule_all_step.py:39
+    When I enter a percentage "50" in the phase                               # steps/test_create_campaign_options_send_schedule_all_step.py:51
+    When I enter the "today" date in the phase                                # steps/test_create_campaign_options_send_schedule_all_step.py:56
+    When I enter the "now" hour                                               # steps/test_create_campaign_options_send_schedule_all_step.py:60
+    When I click the add phase                                                # steps/test_create_campaign_options_send_schedule_all_step.py:45
+    When I enter a percentage "50" in the phase                               # steps/test_create_campaign_options_send_schedule_all_step.py:51
+    When I enter the "tomorrow" date in the phase                             # steps/test_create_campaign_options_send_schedule_all_step.py:56
+    When I enter the "tomorrow" hour                                          # steps/test_create_campaign_options_send_schedule_all_step.py:60
+    When I click on the "next" button to continue                             # steps/test_common_step.py:11
+    Then I am redirected to the destination creation page                     # steps/test_create_campaign_options_send_schedule_all_step.py:29
+

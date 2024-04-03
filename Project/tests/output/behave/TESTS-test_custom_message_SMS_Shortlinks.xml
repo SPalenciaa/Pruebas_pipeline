@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="344.3984270095825" tests='5' skipped='0'
+name="Test_Custom_Message_Sms_Shortlinks" failures='0' errors='0'><testcase time="58.394826889038086" name="Create_Custom_Message_Only_Id_(Error)" status="passed"
+         classname="Test_Custom_Message_Sms_Shortlinks" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Custom_Message_SMS_Shortlinks_2   @Test_Custom_Message_SMS_Shortlinks
+                scenario: Create Custom Message only id (error)
+                given I am on the message creation page &#34;Shortlink&#34; in &#34;SMS&#34; ... passed in 49.82s 
+e                when I enter a valid campaign ID ... passed in 3.191s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.303s 
+                then I see the error message &#34;The shortlink is mandatory&#34; in &#34;//div[normalize-space()=&#39;The shortlink is mandatory&#39;]&#34; ... passed in 2.084s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="58.38273048400879" name="Create_Custom_Message_Empty_(Error)" status="passed"
+         classname="Test_Custom_Message_Sms_Shortlinks" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Custom_Message_SMS_Shortlinks_1   @Test_Custom_Message_SMS_Shortlinks
+                scenario: Create Custom Message empty (error)
+                given I am on the message creation page &#34;Shortlink&#34; in &#34;SMS&#34; ... passed in 50.02s 
+e                when I am not write nothing ... passed in 3.002s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.289s 
+                then I see the error message &#34;The sender ID is mandatory&#34; in &#34;//div[normalize-space()=&#39;The sender ID is mandatory&#39;]&#34; ... passed in 2.068s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="61.787418603897095" name="Create_Custom_Message_Only_Id_And_Url__(Error)" status="passed"
+         classname="Test_Custom_Message_Sms_Shortlinks" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Custom_Message_SMS_Shortlinks_3   @Test_Custom_Message_SMS_Shortlinks
+                scenario: Create Custom Message only id and URL  (error)
+                given I am on the message creation page &#34;Shortlink&#34; in &#34;SMS&#34; ... passed in 49.81s 
+e                when I enter a valid campaign ID ... passed in 3.205s 
+                when I enter a valid URL ... passed in 3.372s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.33s 
+                then I see the error message &#34;The shortlink is mandatory&#34; in &#34;(//div[@class=&#39;ant-notification-notice-description&#39;])[1]&#34; ... passed in 2.071s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="72.22099876403809" name="Create_Custom_Message" status="passed"
+         classname="Test_Custom_Message_Sms_Shortlinks" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Custom_Message_SMS_Shortlinks_4   @Test_Custom_Message_SMS_Shortlinks
+                scenario: Create Custom Message
+                given I am on the message creation page &#34;Shortlink&#34; in &#34;SMS&#34; ... passed in 50.48s 
+e                when I enter a valid campaign ID ... passed in 3.214s 
+                when I enter a valid URL ... passed in 3.446s 
+                when I create a custom message with the wildcards and shortlink ... passed in 15.07s 
+                when I verify my message ... passed in 0.01041s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="93.61245226860046" name="Carrying_Out_Test_Campaign_Message" status="passed"
+         classname="Test_Custom_Message_Sms_Shortlinks" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Custom_Message_SMS_Shortlinks_5   @Test_Custom_Message_SMS_Shortlinks
+                scenario: Carrying out test campaign Message
+                given I am on the message creation page &#34;Shortlink&#34; in &#34;SMS&#34; ... passed in 50.0s 
+e                when I enter a valid campaign ID ... passed in 3.199s 
+                when I enter a valid URL ... passed in 3.43s 
+                when I create a custom message with the wildcards and shortlink ... passed in 15.0s 
+                when I verify my message ... passed in 0.01469s 
+                when I write the number for the test ... passed in 1.185s 
+                when I click on the &#34;Verify Cost&#34; button to continue ... passed in 6.391s 
+                when I see the cost of the message ... passed in 0.02075s 
+                when I click on the &#34;send&#34; button and confirm to continue ... passed in 3.676s 
+                when I am see the confirmation alert, &#34;The message was successfully sent&#34; in &#34;(//div[@class=&#39;ant-notification-notice-description&#39;])[1]&#34; ... passed in 4.238s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.454s 
+                then I am redirected to the summary page ... passed in 3.003s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

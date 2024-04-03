@@ -1,0 +1,44 @@
+************************************************************
+Running parallel scenarios
+
+************************************************************
+'global_functions' object has no attribute 'evidence_path'
+'global_functions' object has no attribute 'evidence_path'
+'global_functions' object has no attribute 'evidence_path'
+'global_functions' object has no attribute 'evidence_path'
+'global_functions' object has no attribute 'evidence_path'
+'global_functions' object has no attribute 'evidence_path'
+'global_functions' object has no attribute 'evidence_path'
+Message: Date not found.
+
+La descarga no se completó a tiempo.
+'global_functions' object has no attribute 'evidence_path'
+'global_functions' object has no attribute 'evidence_path'
+'global_functions' object has no attribute 'evidence_path'
+'global_functions' object has no attribute 'evidence_path'
+'global_functions' object has no attribute 'evidence_path'
+'global_functions' object has no attribute 'evidence_path'
+'global_functions' object has no attribute 'evidence_path'
+'global_functions' object has no attribute 'evidence_path'
+'global_functions' object has no attribute 'evidence_path'
+Message: Timed out waiting for element //input[@placeholder='Sender Id'] (xpath) to be present
+
+Message: Timed out waiting for element //input[@placeholder='Sender Id'] (xpath) to be present
+
+'global_functions' object has no attribute 'evidence_path'
+'global_functions' object has no attribute 'evidence_path'
+Message: Timed out waiting for element //input[@placeholder='Sender Id'] (xpath) to be present
+
+'Company_Page_Account' object has no attribute 'action'
+'global_functions' object has no attribute 'evidence_path'
+El archivo yp-bulk-campaign-template (14) fallo
+'global_functions' object has no attribute 'evidence_path'
+card_account() missing 1 required positional argument: 'context'
+'global_functions' object has no attribute 'evidence_path'
+Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:182:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:394:5
+element.find/</<@chrome://remote/content/marionette/element.sys.mjs:134:16
+

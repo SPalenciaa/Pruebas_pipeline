@@ -1,0 +1,12 @@
+@Smoke_Test @Test_Creation_Campaing_Flows_schedule
+Feature: Test_Creation_Campaing_flow # features/test_creation_all_campings_schedule.feature:3
+
+  @Test_Creation_Campaing_1 @Smoke_Test @Test_Creation_Campaing_Flows_schedule
+  Scenario Outline: Review Campaign Data -- @1.2                                                                        # features/test_creation_all_campings_schedule.feature:19
+    Given I am on the "Bulk SMS" campaign summary page test in "SMS"                                                    # steps/test_creation_all_campaings_schedule_step.py:14
+    When I review the "PRUEBAS AUTOMATIZADAS" and data                                                                  # steps/test_creation_all_campaings_schedule_step.py:47
+    And I click the "done" button to finish the campaign creation process                                               # steps/test_common_step.py:30
+    And I click the confirm campaign                                                                                    # steps/test_common_step.py:45
+    When I am see the confirmation alert, "TRANSACTION SUCCESSFUL" in "//div[@class='ant-notification-notice-message']" # steps/test_common_step.py:23
+    Then I am redirected to the campaigns menu and see the confirmation alert                                           # steps/test_creation_all_campaings_schedule_step.py:54
+

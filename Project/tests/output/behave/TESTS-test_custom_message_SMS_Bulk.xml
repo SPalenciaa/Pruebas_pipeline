@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="278.77011704444885" tests='4' skipped='0'
+name="Test_Custom_Message_Sms_Bulk" failures='0' errors='0'><testcase time="59.54706573486328" name="Create_Custom_Message_Empty_(Error)" status="passed"
+         classname="Test_Custom_Message_Sms_Bulk" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Custom_Message_SMS_Bulk_1   @Test_Custom_Message_SMS_Bulk
+                scenario: Create Custom Message empty (error)
+                given I am on the message creation page &#34;Bulk SMS&#34; in &#34;SMS&#34; ... passed in 51.17s 
+e                when I am not write nothing ... passed in 3.002s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.291s 
+                then I see the error message &#34;The sender ID is mandatory&#34; in &#34;//div[normalize-space()=&#39;The sender ID is mandatory&#39;]&#34; ... passed in 2.085s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="58.42724132537842" name="Create_Custom_Message_Only_Id_(Error)" status="passed"
+         classname="Test_Custom_Message_Sms_Bulk" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Custom_Message_SMS_Bulk_2   @Test_Custom_Message_SMS_Bulk
+                scenario: Create Custom Message only id (error)
+                given I am on the message creation page &#34;Bulk SMS&#34; in &#34;SMS&#34; ... passed in 49.84s 
+e                when I enter a valid campaign ID ... passed in 3.214s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.292s 
+                then I see the error message &#34;The message is mandatory&#34; in &#34;//div[normalize-space()=&#39;The message is mandatory&#39;]&#34; ... passed in 2.077s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="72.17900896072388" name="Create_Custom_Message" status="passed"
+         classname="Test_Custom_Message_Sms_Bulk" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Custom_Message_SMS_Bulk_3   @Test_Custom_Message_SMS_Bulk
+                scenario: Create Custom Message
+                given I am on the message creation page &#34;Bulk SMS&#34; in &#34;SMS&#34; ... passed in 50.16s 
+e                when I enter a valid campaign ID ... passed in 3.194s 
+                when I create a custom message with the wildcards and shortlink ... passed in 18.81s 
+                when I verify my message ... passed in 0.01485s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="88.61680102348328" name="Carrying_Out_Test_Campaign_Message" status="passed"
+         classname="Test_Custom_Message_Sms_Bulk" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Custom_Message_SMS_Bulk_4   @Test_Custom_Message_SMS_Bulk
+                scenario: Carrying out test campaign Message
+                given I am on the message creation page &#34;Bulk SMS&#34; in &#34;SMS&#34; ... passed in 49.92s 
+e                when I enter a valid campaign ID ... passed in 3.196s 
+                when I create a custom message with the wildcards ... passed in 13.55s 
+                when I verify my message ... passed in 0.007828s 
+                when I write the number for the test ... passed in 1.168s 
+                when I click on the &#34;Verify Cost&#34; button to continue ... passed in 6.383s 
+                when I see the cost of the message ... passed in 0.021s 
+                when I click on the &#34;send&#34; button and confirm to continue ... passed in 3.681s 
+                when I am see the confirmation alert, &#34;The message was successfully sent&#34; in &#34;(//div[@class=&#39;ant-notification-notice-description&#39;])[1]&#34; ... passed in 4.317s 
+                when I click on the &#34;next&#34; button to continue ... passed in 3.372s 
+                then I am redirected to the summary page ... passed in 3.003s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

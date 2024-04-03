@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="39.90758514404297" tests='1' skipped='0'
+name="Test_List_Groups" failures='1' errors='0'><testcase time="39.90758514404297" name="Filter_Listgroups" status="failed"
+         classname="Test_List_Groups" >
+            <failure message="'global_functions' object has no attribute 'evidence_path'" type="AssertionError">
+                    <![CDATA[ Failing step: when I see the group of contacts with the name "Pruebas Demo" and their data ... failed in 17.1s  Location:1
+                        {'step_type': 'when', 'name': 'I see the group of contacts with the name "Pruebas Demo" and their data', 'text': 'None', 'status': 'failed', 'duration': 17.103256940841675, 'error_msg': "'global_functions' object has no attribute 'evidence_path'", 'error_lines': ['  File "/usr/local/lib/python3.8/dist-packages/behave/model.py", line 1329, in run\n    match.run(runner.context)\n', '  File "/usr/local/lib/python3.8/dist-packages/behave/matchers.py", line 98, in run\n    self.func(context, *args, **kwargs)\n', '  File "steps/test_list_gruops_steps.py", line 26, in test_step_impl\n    context.list_page.verify_filter_search(card.strip(\'"\'))\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/contacts_list_groups_page.py", line 41, in verify_filter_search\n    self.global_function.attach_screenshot_to_report("accounts_filter_error")\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/global_functions.py", line 184, in attach_screenshot_to_report\n    screenshot_path = os.path.join(self.evidence_path, f"{name}.png")\n'], 'hash': 38532692, 'index': 1}
+                    ]]>
+                </failure><system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_List_Groups_1   @Test_List_Groups
+                scenario: Filter List/groups
+                given I am on the &#34;Groups&#34; page ... passed in 18.42s 
+e                when I filter the contacts &#34;Pruebas Demo&#34; ... passed in 4.381s 
+                when I see the group of contacts with the name &#34;Pruebas Demo&#34; and their data ... failed in 17.1s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

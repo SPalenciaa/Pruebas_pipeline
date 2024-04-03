@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="41.9670991897583" tests='1' skipped='0'
+name="Test_Company_Users_Filters" failures='1' errors='0'><testcase time="41.9670991897583" name="Filter_Users" status="failed"
+         classname="Test_Company_Users_Filters" >
+            <failure message="'global_functions' object has no attribute 'evidence_path'" type="AssertionError">
+                    <![CDATA[ Failing step: then I will see the card of the "vahani4883@fkcod.com" user email ... failed in 17.12s  Location:1
+                        {'step_type': 'then', 'name': 'I will see the card of the "vahani4883@fkcod.com" user email', 'text': 'None', 'status': 'failed', 'duration': 17.12335228919983, 'error_msg': "'global_functions' object has no attribute 'evidence_path'", 'error_lines': ['  File "/usr/local/lib/python3.8/dist-packages/behave/model.py", line 1329, in run\n    match.run(runner.context)\n', '  File "/usr/local/lib/python3.8/dist-packages/behave/matchers.py", line 98, in run\n    self.func(context, *args, **kwargs)\n', '  File "steps/test_company_users_step.py", line 29, in test_step_impl\n    context.company_user.card_user(card.strip(\'"\'))\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/company_users_page.py", line 43, in card_user\n    self.handle_error("Error in card_account", "accounts_filter_error", e)\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/company_users_page.py", line 87, in handle_error\n    self.global_function.attach_screenshot_to_report(name=screenshot_name)\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/global_functions.py", line 184, in attach_screenshot_to_report\n    screenshot_path = os.path.join(self.evidence_path, f"{name}.png")\n'], 'hash': 60491227, 'index': 1}
+                    ]]>
+                </failure><system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Company_Users_Filters_1   @Test_Company_Users_Filters
+                scenario: Filter users
+                given I am on the users company page ... passed in 18.36s 
+e                when Filter the &#34;developer 2 felipe&#34; usersname ... passed in 6.482s 
+                then I will see the card of the &#34;vahani4883@fkcod.com&#34; user email ... failed in 17.12s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="71.80887818336487" tests='2' skipped='0'
+name="Test_Select_Contact_Menu_All" failures='2' errors='0'><testcase time="36.571357011795044" name="Select_List__Groups_From_Contacts_Menu" status="failed"
+         classname="Test_Select_Contacts_Menu_All" >
+            <failure message="'global_functions' object has no attribute 'evidence_path'" type="AssertionError">
+                    <![CDATA[ Failing step: then I am redirected to the contacts Groups/Lists page ... failed in 18.3s  Location:1
+                        {'step_type': 'then', 'name': 'I am redirected to the contacts Groups/Lists page', 'text': 'None', 'status': 'failed', 'duration': 18.298428297042847, 'error_msg': "'global_functions' object has no attribute 'evidence_path'", 'error_lines': ['  File "/usr/local/lib/python3.8/dist-packages/behave/model.py", line 1329, in run\n    match.run(runner.context)\n', '  File "/usr/local/lib/python3.8/dist-packages/behave/matchers.py", line 98, in run\n    self.func(context, *args, **kwargs)\n', '  File "steps/test_select_contacts_menu_all_step.py", line 34, in test_step_impl\n    map_page_contacts.verify_list_groups_contacts()\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/contacts_map__page.py", line 21, in verify_list_groups_contacts\n    self.global_function.attach_screenshot_to_report()\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/global_functions.py", line 184, in attach_screenshot_to_report\n    screenshot_path = os.path.join(self.evidence_path, f"{name}.png")\n'], 'hash': 28379572, 'index': 1}
+                    ]]>
+                </failure><system-out>
+            <![CDATA[
+            @scenario.begin
+                @Test_Select_Contacts_Menu_All_1   @Smoke_Test_1   @Test_Select_Contacts_Menu_All
+                scenario: Select List / Groups from Contacts menu
+                given I am in the dashboard ... passed in 13.77s 
+e                when I select &#34;Groups&#34; from the contacts menu ... passed in 4.508s 
+                then I am redirected to the contacts Groups/Lists page ... failed in 18.3s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="35.237521171569824" name="Select_Create_From_Contacts_Menu" status="failed"
+         classname="Test_Select_Contacts_Menu_All" >
+            <failure message="'global_functions' object has no attribute 'evidence_path'" type="AssertionError">
+                    <![CDATA[ Failing step: then I am redirected to the contacts create page step ... failed in 17.81s  Location:1
+                        {'step_type': 'then', 'name': 'I am redirected to the contacts create page step', 'text': 'None', 'status': 'failed', 'duration': 17.80646514892578, 'error_msg': "'global_functions' object has no attribute 'evidence_path'", 'error_lines': ['  File "/usr/local/lib/python3.8/dist-packages/behave/model.py", line 1329, in run\n    match.run(runner.context)\n', '  File "/usr/local/lib/python3.8/dist-packages/behave/matchers.py", line 98, in run\n    self.func(context, *args, **kwargs)\n', '  File "steps/test_select_contacts_menu_all_step.py", line 24, in test_step_impl\n    contacts_page.verify_create_contacts()\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/contacts_create_page.py", line 27, in verify_create_contacts\n    self.global_function.attach_screenshot_to_report(name="redirected_campaigns_menu_error")\n', '  File "/home/fpalencia/Automations/mientorno/test-pruebas-automatizadas/Project/tests/pages/global_functions.py", line 184, in attach_screenshot_to_report\n    screenshot_path = os.path.join(self.evidence_path, f"{name}.png")\n'], 'hash': 85018457, 'index': 1}
+                    ]]>
+                </failure><system-out>
+            <![CDATA[
+            @scenario.begin
+                @Smoke_Test_2   @Test_Select_Contacts_Menu_All   @Smoke_Test_1   @Test_Select_Contacts_Menu_All
+                scenario: Select Create from Contacts menu
+                given I am in the dashboard ... passed in 12.99s 
+e                when I select &#34;Create&#34; from the contacts menu ... passed in 4.438s 
+                then I am redirected to the contacts create page step ... failed in 17.81s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

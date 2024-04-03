@@ -1,0 +1,14 @@
+{
+    "url": "https://demo.yellowpush.com/#/",
+    "browser": "firefox",
+    "user": "spalencia@identidadtech.com",
+    "user_dev": "vvasquez@identidadtech.com",
+    "user_admin": "development@identidadtech.com",
+    "password": "Pruebas123*",
+    "password_dev": "Pruebas123*",
+    "password_admin": "Identidad123*",
+    "csv_path": "/csv/Csv_pruebas_good.csv",
+    "csv_path_contacts": "/csv/Csv_pruebas_automatizadas_contactos.csv",
+    "company": "Identidad"
+}
+
